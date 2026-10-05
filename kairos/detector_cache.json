@@ -1,0 +1,605 @@
+{
+ "000753ce48114a462df7bb94": {
+  "category": "ambiguous",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "01b14c3673b916c4b454e7ef": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Milestone",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "026ff7aea3e3868e4de93bca": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Milestone",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "0453bc96c95bb14ef8892712": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "0936793dc9c819c3876d09ce": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "0996ed5ac9bc8146315f6f86": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "0d49ddbd7bddf304da1eaf72": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "10a12d9840f30893857dad59": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "job_loss",
+  "source": "llm"
+ },
+ "157f53940dd1da34c63e993f": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "257fa01ab93f3bd08152cd5c": {
+  "category": "sacred",
+  "injection_attempt": true,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "2804c7a74a8a9656e4d28115": {
+  "category": "absence",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Observation",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "2d36efd8e079efb187e93489": {
+  "category": "routine",
+  "injection_attempt": true,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "30136b627720f9a3031366df": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "homelessness_risk",
+  "source": "llm"
+ },
+ "36e41afced21f3fdd8c22320": {
+  "category": "ambiguous",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "39f6818a1b5927e2242d18ec": {
+  "category": "other_person",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "3dafe67a569b8e0847e7d0a9": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "family_crisis",
+  "source": "llm"
+ },
+ "4714183f53b37ea76f22f37c": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "4d29ba1f90f0fed6e24ed71c": {
+  "category": "absence",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Observation",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "4d746fa3965b3595af35d619": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "homelessness_risk",
+  "source": "llm"
+ },
+ "510b8d58581c90b54d9c4768": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "513c1f12133f67ea4709d59b": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "51e9b0d32cb2644cf223bb28": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "financial_hardship",
+  "source": "llm"
+ },
+ "5ebddd5e2959f1058cc1197e": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "job_loss",
+  "source": "llm"
+ },
+ "628619762efc108e32d30dc2": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "69c9db9c30d6a1914ecb6bea": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "69d4a5f7ee0ca5b4413d5446": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "financial_hardship",
+  "source": "llm"
+ },
+ "6d6b63155ff3572213e0173d": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "6dc95a7aa18e53a6b46e78b3": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "6e700564e4a516927f6fb1bc": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "6ed7e4eee2eee64c7dc8ede1": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "721676927e466f10a9b7b8b0": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "75a42820c859fab1b1eed84c": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "792acb2f23840f1ef2b4fbb4": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "7a38abb8df052023942e0c7f": {
+  "category": "absence",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Observation",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "7b6fd84ca10a9ebca8f8d51b": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "7bb5550618a30f660651f456": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "7d02e484fd724e974ba6ec7c": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "88e9d695cb69a56737976bd0": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "903f02ede3030a3023bf27dc": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "a100b54847b136dea23d2f7a": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "a613aa06f825fa78aeae1c90": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "aafb8a123b7e097ff407669a": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "family_crisis",
+  "source": "llm"
+ },
+ "abfa8c584a973e7bbe2c2f2f": {
+  "category": "ambiguous",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "ae1a59110886dc9e295dd0cf": {
+  "category": "resolved_followup",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "ae8faab64d43b95d54309516": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "homelessness_risk",
+  "source": "llm"
+ },
+ "aec5f7c707b583519508fb1e": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "family_crisis",
+  "source": "llm"
+ },
+ "aecbec80fa8fd87efc6128da": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "afaf5dd2c11afeef8fa61a74": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "bcdd6f9dc6d5ee1fd53a3990": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "bef3b1683610c3873c273124": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "bfc4b4cb25f60858379dacf3": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "cc2609bd06d239b41c094bf0": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "family_crisis",
+  "source": "llm"
+ },
+ "ccd6c80f38247e6ee32cf65c": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Impact update",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "d1a5e74543c384a433a940ac": {
+  "category": "ambiguous",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "da63c1434e74dec53f34789e": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "dbff8b7a8876b3526807dfcc": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "dd2be9daaf30fb98b389e6fa": {
+  "category": "routine",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "e200fa76db0d24f431a11c32": {
+  "category": "other_person",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "e695fac8c268e0d164019d1b": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "serious_illness",
+  "source": "llm"
+ },
+ "eea7b62c698d635fa15e5191": {
+  "category": "resolved_followup",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "eefa6a28c7b459f41d6838ac": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "f5800797c61892edd2f45d4c": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Care contact",
+  "sacred_type": "mental_health",
+  "source": "llm"
+ },
+ "f784d946a4ae08e68b74d1f9": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "f967bcf6deaa27c0f5e94b39": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "fc2182fe99206e5f4954b176": {
+  "category": "sacred",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "grief",
+  "source": "llm"
+ },
+ "ff2926d28a253360516ac3bb": {
+  "category": "other_person",
+  "injection_attempt": false,
+  "kind": "prayer",
+  "model": "claude-opus-5-5",
+  "note_type": "",
+  "sacred_type": "none",
+  "source": "llm"
+ },
+ "ff78b46ff3118463fda84f3d": {
+  "category": "praise",
+  "injection_attempt": false,
+  "kind": "note",
+  "model": "claude-opus-5-5",
+  "note_type": "Milestone",
+  "sacred_type": "none",
+  "source": "llm"
+ }
+}

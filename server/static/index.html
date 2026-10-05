@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kairos</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #111110; --surface-1: #1a1a19; --surface-2: #222220; --surface-3: #2a2a28;
+  --border: #2f2f2c; --border-strong: #3d3d39;
+  --text-primary: #f4f4f1; --text-secondary: #c3c2b7; --text-muted: #8b8a82;
+  /* decision identity: validated dark categorical slots 1-4 (adjacent), always paired with the label */
+  --ask: #3987e5; --care: #d95926; --thank: #199e70; --wait: #c98500;
+  --good: #0ca30c; --critical: #d03b3b;
+  --radius: 6px; --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text-primary);
+  font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", system-ui, sans-serif; }
+button, select, textarea, input { font: inherit; color: inherit; }
+a { color: inherit; }
+[hidden] { display: none !important; }
+
+/* top bar */
+.top { position: sticky; top: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  padding: 10px 20px; background: rgba(17,17,16,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.brand { display: flex; align-items: baseline; gap: 8px; margin-right: auto; }
+.brand b { font-size: 15px; letter-spacing: .2px; }
+.brand span { color: var(--text-muted); font-size: 12px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border: 1px solid var(--border);
+  border-radius: 999px; color: var(--text-secondary); font-size: 12px; background: var(--surface-1); }
+.btn { border: 1px solid var(--border-strong); background: var(--surface-2); padding: 5px 10px; border-radius: var(--radius);
+  cursor: pointer; font-size: 12px; }
+.btn:hover { background: var(--surface-3); }
+.btn.primary { background: #2c2c2a; border-color: #55554f; }
+.btn:disabled { opacity: .5; cursor: default; }
+select { background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 4px 8px; font-size: 12px; }
+
+main { max-width: 1240px; margin: 0 auto; padding: 18px 20px 60px; }
+
+/* stat tiles */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 18px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.tile .k { display: flex; align-items: center; gap: 6px; color: var(--text-secondary); font-size: 12px; }
+.tile .v { font-size: 24px; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.tile .s { color: var(--text-muted); font-size: 11px; }
+.dot { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.d-CARE { background: var(--care); } .d-THANK { background: var(--thank); } .d-ASK { background: var(--ask); } .d-WAIT { background: var(--wait); }
+.d-REVIEW { background: var(--wait); } .d-REMINDER { background: var(--care); }
+
+/* tabs */
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 14px; overflow-x: auto; }
+.tab { background: none; border: 0; padding: 8px 12px; color: var(--text-muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
+.tab[aria-selected="true"] { color: var(--text-primary); border-bottom-color: var(--text-primary); }
+h2 { font-size: 14px; margin: 0 0 10px; font-weight: 600; }
+.sub { color: var(--text-muted); font-size: 12px; margin: -6px 0 12px; }
+
+/* badges */
+.badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; letter-spacing: .3px;
+  padding: 1px 7px; border-radius: 4px; background: var(--surface-3); color: var(--text-primary); white-space: nowrap; }
+.tag { font-family: var(--mono); font-size: 11px; color: var(--text-secondary); background: var(--surface-2);
+  border: 1px solid var(--border); padding: 0 5px; border-radius: 4px; white-space: nowrap; }
+
+/* queue */
+.queue { display: grid; gap: 8px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.card.k-CARE, .card.k-REMINDER { border-left: 3px solid var(--care); }
+.card.k-THANK { border-left: 3px solid var(--thank); }
+.card.k-REVIEW { border-left: 3px solid var(--wait); }
+.card-h { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.card-h .title { font-weight: 600; font-size: 14px; }
+.card-h .who { margin-left: auto; color: var(--text-secondary); font-size: 12px; }
+.link { background: none; border: 0; padding: 0; color: var(--text-primary); text-decoration: underline; text-decoration-color: var(--border-strong);
+  text-underline-offset: 3px; cursor: pointer; }
+.reason { color: var(--text-secondary); margin: 6px 0 8px; }
+.held { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.held .msg { font-size: 12px; color: var(--text-muted); border: 1px dashed var(--border-strong); border-radius: 4px; padding: 1px 7px; }
+.held .lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px; align-self: center; }
+.held .msg { color: var(--text-secondary); border-style: solid; }
+.held .msg .ch { color: var(--text-muted); }
+.summary { font-size: 13.5px; color: var(--text-primary); margin: 6px 0 8px; }
+.why { color: var(--text-muted); font-size: 12px; margin: -2px 0 8px; }
+.brief { white-space: pre-wrap; background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px;
+  font-size: 12px; color: var(--text-secondary); margin: 6px 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; margin-top: 8px; }
+textarea { width: 100%; min-height: 54px; resize: vertical; background: var(--surface-2); border: 1px solid var(--border-strong);
+  border-radius: 6px; padding: 7px 9px; font-size: 12px; }
+textarea:focus, select:focus, .btn:focus-visible { outline: 1px solid #77766e; outline-offset: 1px; }
+.respond { margin-top: 6px; }
+#viewer { max-width: 260px; }
+.urg { font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--border-strong); color: var(--text-primary); }
+.urg.urgent { border-color: var(--care); } .urg.high { color: var(--text-secondary); }
+.overload { background: var(--surface-1); border: 1px solid var(--border-strong); border-left: 3px solid var(--wait); border-radius: 8px;
+  padding: 10px 14px; margin: 0 0 10px; color: var(--text-secondary); }
+.overload b { color: var(--text-primary); }
+.capline { display: flex; align-items: center; gap: 10px; color: var(--text-muted); font-size: 12px; margin: 6px 0; }
+.capline::before, .capline::after { content: ""; flex: 1; border-top: 1px dashed var(--border-strong); }
+.handed { color: var(--text-muted); font-size: 11px; }
+.hand select { max-width: 100%; }
+.hand input { flex: 1; min-width: 180px; background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 6px; padding: 4px 8px; font-size: 12px; }
+.empty { color: var(--text-muted); padding: 28px; text-align: center; border: 1px dashed var(--border); border-radius: 8px; }
+.err { color: #ff9a8a; font-size: 12px; }
+
+/* tables */
+.tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 12px; }
+th { text-align: left; color: var(--text-muted); font-weight: 500; background: var(--surface-1); position: sticky; top: 0; }
+th, td { padding: 6px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: #171716; }
+td.reason-c { color: var(--text-secondary); min-width: 280px; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; align-items: center; }
+.fchip { border: 1px solid var(--border); background: var(--surface-1); border-radius: 999px; padding: 3px 10px; cursor: pointer; font-size: 12px; color: var(--text-secondary); display: inline-flex; gap: 6px; align-items: center; }
+.fchip[aria-pressed="true"] { border-color: #66655e; color: var(--text-primary); background: var(--surface-2); }
+
+/* person drawer */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 20; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(640px, 100%); background: var(--surface-1); border-left: 1px solid var(--border);
+  z-index: 21; overflow-y: auto; padding: 16px 18px 40px; }
+.drawer h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .6px; color: var(--text-muted); margin: 18px 0 8px; font-weight: 600; }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 6px; }
+.kv div { background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; }
+.kv small { display: block; color: var(--text-muted); font-size: 11px; }
+.strip { display: grid; grid-template-columns: repeat(16, 1fr); gap: 2px; max-width: 420px; }
+.wk { aspect-ratio: 1; border-radius: 3px; background: var(--surface-3); position: relative; }
+.wk.on { background: var(--text-secondary); }
+.strip-axis { display: flex; justify-content: space-between; max-width: 420px; color: var(--text-muted); font-size: 11px; margin-top: 3px; }
+.rel { display: grid; grid-template-columns: 240px 1fr 40px; gap: 8px; align-items: center; font-size: 12px; margin: 3px 0; }
+.bar { height: 8px; background: var(--surface-3); border-radius: 0 4px 4px 0; position: relative; }
+.bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--text-secondary); border-radius: 0 4px 4px 0; }
+.bar.top i { background: var(--text-primary); }
+.textitem { border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 6px; background: var(--surface-2); }
+.textitem .meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; color: var(--text-muted); font-size: 11px; }
+.textitem .body { margin-top: 4px; color: var(--text-secondary); }
+.lock { color: var(--text-muted); font-style: italic; }
+details { border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; margin: 6px 0; background: var(--surface-2); }
+summary { cursor: pointer; color: var(--text-secondary); font-size: 12px; }
+.trace { font-family: var(--mono); font-size: 11px; color: var(--text-secondary); white-space: pre-wrap; margin: 6px 0 0; }
+.step { display: grid; grid-template-columns: 150px 1fr; gap: 8px; padding: 4px 0; border-top: 1px solid var(--border); font-size: 12px; }
+.step:first-of-type { border-top: 0; }
+.step b { font-weight: 600; color: var(--text-primary); }
+
+/* tooltip */
+.tip { position: fixed; pointer-events: none; z-index: 40; background: #0b0b0a; border: 1px solid var(--border-strong); color: var(--text-primary);
+  font-size: 11px; padding: 4px 7px; border-radius: 4px; white-space: nowrap; }
+
+/* toast */
+.toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: #262624; border: 1px solid var(--border-strong);
+  padding: 8px 14px; border-radius: 8px; z-index: 50; font-size: 12px; max-width: 90vw; }
+
+/* pipeline */
+.pipe { display: grid; gap: 8px; }
+.pipe .p { display: grid; grid-template-columns: 28px 200px 1fr; gap: 10px; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.pipe .n { width: 22px; height: 22px; border-radius: 50%; background: var(--surface-3); display: grid; place-items: center; font-size: 11px; color: var(--text-secondary); }
+.pipe .p.human { border-color: #55554f; }
+@media (max-width: 640px) {
+  .pipe .p { grid-template-columns: 28px 1fr; } .pipe .p > :last-child { grid-column: 2; }
+  .rel { grid-template-columns: 110px 1fr 36px; }
+  .card-h .who { margin-left: 0; width: 100%; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>Kairos</b><span>Who needs a human today?</span></div>
+  <span class="chip" id="simdate" title="Simulated date for the demo">Today · …</span>
+  <label class="chip" style="padding:2px 4px 2px 8px">Viewing as
+    <select id="viewer" aria-label="Viewing as"></select></label>
+  <button class="btn" id="advance" title="Demo: move the simulated date forward 14 days so follow-up reminders come due">+14 days</button>
+  <button class="btn" id="rerun" title="Re-run every agent over all scheduled automations (resets the queue; the audit log is kept)">Re-run agents</button>
+</header>
+
+<main>
+  <section class="tiles" id="tiles" aria-label="Summary"></section>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="queue" aria-selected="true">Human Attention Queue</button>
+    <button class="tab" role="tab" data-tab="decisions">All decisions</button>
+    <button class="tab" role="tab" data-tab="audit">Audit log</button>
+    <button class="tab" role="tab" data-tab="how">How Kairos decides</button>
+  </nav>
+
+  <section id="tab-queue">
+    <h2 id="qtitle">Who needs a human today?</h2>
+    <p class="sub" id="qsub"></p>
+    <div class="overload" id="overload" hidden></div>
+    <div class="filters" id="qfilters"></div>
+    <div class="queue" id="queue"></div>
+  </section>
+
+  <section id="tab-decisions" hidden>
+    <h2>Every scheduled message Kairos judged</h2>
+    <p class="sub">One row per automation. Routine newsletters and birthday messages for people with no flags pass through untouched and are hidden unless shown.</p>
+    <div class="filters" id="dfilters"></div>
+    <div class="tablewrap"><table id="dtable"></table></div>
+  </section>
+
+  <section id="tab-audit" hidden>
+    <h2>Audit log</h2>
+    <p class="sub">Append-only. One row per decision (what was scheduled, what Kairos did, why, who it was routed to) and one per human action.</p>
+    <div class="filters" id="afilters"></div>
+    <div class="tablewrap"><table id="atable"></table></div>
+  </section>
+
+  <section id="tab-how" hidden>
+    <h2>How Kairos decides</h2>
+    <p class="sub">Six narrow agents run in a fixed order for every scheduled message. Only the detector reads free text, and it can only return a label. Any error becomes WAIT + BLOCK.</p>
+    <div class="pipe">
+      <div class="p"><span class="n">1</span><b>Signal Agent</b><span>Dates every prayer request and pastoral note, normalizes attendance, giving, volunteering and contact signals. Text a member did not consent to share with AI is dropped here, before any other agent sees it.</span></div>
+      <div class="p"><span class="n">2</span><b>Sacred Moment Detector</b><span>Labels each text: sacred · ambiguous · praise · other person · resolved · absence · routine, plus a sacred type and an injection flag. Output is validated against the enum; anything else becomes "ambiguous". Text is data, never instructions.</span></div>
+      <div class="p"><span class="n">3</span><b>Decision Agent</b><span>Priority rules, first match wins: sacred window → consent restricted → ambiguous → silent drop-off → someone else's crisis → milestone → guardrail holds → healthy ask.</span></div>
+      <div class="p"><span class="n">4</span><b>Routing Agent</b><span>Picks the person with the strongest relationship and says why (role, strength, last contact, runner-up).</span></div>
+      <div class="p"><span class="n">5</span><b>Draft Agent</b><span>Writes a thank-you (no ask) or a private brief for the routed person. Never sends anything.</span></div>
+      <div class="p"><span class="n">6</span><b>Guardrail Agent</b><span>Independent final check from the raw data: consent, keyword second opinion, minors, opt-outs, 30-day cap, channel consent. It can only downgrade (never to ASK), and it brings in a human when something sacred might otherwise be held silently.</span></div>
+      <div class="p human"><span class="n">✓</span><b>A person</b><span>Every CARE, THANK and uncertain WAIT lands here. People log contacts (which schedule a 14-day follow-up), approve or edit thank-yous (re-checked for asks), and keep, escalate or release holds (hard constraints like minors and opt-outs can never be released).</span></div>
+    </div>
+  </section>
+</main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Person"></aside>
+<div class="tip" id="tip" hidden></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDate = d => d ? new Date(d.slice(0,10) + "T12:00:00").toLocaleDateString(undefined, {month: "short", day: "numeric", year: "numeric"}) : "";
+const KIND = { CARE: "CARE", REMINDER: "FOLLOW-UP", THANK: "THANK", REVIEW: "WAIT · REVIEW" };
+const DEC = ["CARE", "THANK", "ASK", "WAIT"];
+const DEC_HELP = { CARE: "sacred moment · person assigned", THANK: "milestone · ask replaced", ASK: "healthy · allowed to send", WAIT: "timing or uncertainty · held" };
+let STAFF = [], viewer = localStorageGet("kairos.viewer") || "", qKind = "", dFilter = "", aFilter = "", showRoutine = false;
+
+function localStorageGet(k) { try { return localStorage.getItem(k); } catch { return null; } }
+function localStorageSet(k, v) { try { localStorage.setItem(k, v); } catch {} }
+async function api(path, body) {
+  const r = await fetch(path, body ? { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) } : {});
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.detail || r.statusText);
+  return j;
+}
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 3800); }
+const staffName = id => (STAFF.find(s => s.staff_id === id) || {}).name || id;
+const badge = k => `<span class="badge"><span class="dot d-${esc(k)}"></span>${esc(KIND[k] || k)}</span>`;
+
+/* tooltip for any [data-tip] */
+document.addEventListener("pointerover", e => { const el = e.target.closest("[data-tip]"); const tip = $("#tip");
+  if (!el) { tip.hidden = true; return; } tip.textContent = el.dataset.tip; tip.hidden = false; });
+document.addEventListener("pointermove", e => { const tip = $("#tip"); if (tip.hidden) return;
+  const x = Math.min(e.clientX + 12, innerWidth - tip.offsetWidth - 8); tip.style.left = x + "px"; tip.style.top = (e.clientY + 14) + "px"; });
+
+/* ---------- summary ---------- */
+async function loadSummary() {
+  const s = await api("/api/summary");
+  $("#simdate").textContent = "Today · " + fmtDate(s.sim_date) + (s.sim_date !== s.as_of ? " (simulated)" : "");
+  const t = (k, v, sub, dot) => `<div class="tile"><div class="k">${dot ? `<span class="dot d-${dot}"></span>` : ""}${k}</div><div class="v">${v}</div><div class="s">${sub}</div></div>`;
+  $("#tiles").innerHTML = DEC.map(d => t(d, s.counts[d], DEC_HELP[d], d)).join("") +
+    t("Messages held", s.messages_held, `of ${s.automations_total} scheduled`) +
+    t("Care needs routed", s.care_needs_routed, `${s.care_contacts_logged} contact${s.care_contacts_logged === 1 ? "" : "s"} logged`) +
+    t("Passed through", s.routine_passed, "routine, untouched") +
+    t("Open for a person", s.queue_open, s.reminders_upcoming ? `${s.reminders_upcoming} follow-up${s.reminders_upcoming === 1 ? "" : "s"} scheduled` : "today");
+}
+
+/* ---------- queue ---------- */
+async function loadQueue() {
+  const q = await api("/api/queue" + (viewer ? `?staff_id=${viewer}` : ""));
+  const name = viewer ? staffName(viewer).split(" ")[0] : "";
+  $("#qtitle").textContent = viewer ? `${name}, here's who needs you today` : "Who needs a human today?";
+  const counts = q.reduce((a, i) => (a[i.kind] = (a[i.kind] || 0) + 1, a), {});
+  const me = STAFF.find(x => x.staff_id === viewer), care = (counts.CARE || 0) + (counts.REMINDER || 0);
+  const cap = me ? +me.weekly_care_capacity : 0, isOver = me && care > cap;
+  $("#qsub").textContent = q.length ? `${q.length} ${q.length === 1 ? "person" : "people"} · most urgent first · nothing below was sent automatically` : "";
+  $("#overload").hidden = !isOver;
+  if (isOver) $("#overload").innerHTML = `<b>${care} people need care from you this week. Your capacity is ${cap}.</b> They're sorted most urgent first, so reach the top ${cap}. Use <b>Hand to…</b> on the others to pass them to someone who knows them and has room.`;
+  $("#qfilters").innerHTML = ["", "CARE", "REMINDER", "REVIEW", "THANK"].filter(k => !k || counts[k]).map(k =>
+    `<button class="fchip" aria-pressed="${qKind === k}" data-k="${k}">${k ? `<span class="dot d-${k}"></span>${KIND[k]} · ${counts[k]}` : `All · ${q.length}`}</button>`).join("");
+  const items = q.filter(i => !qKind || i.kind === qKind);
+  let careSeen = 0;
+  const html = items.map(i => {
+    const isCare = i.kind === "CARE" || i.kind === "REMINDER";
+    const divider = isOver && isCare && careSeen++ === cap ? `<div class="capline">beyond your capacity of ${cap} this week · consider handing these over</div>` : "";
+    return divider + card(i);
+  }).join("");
+  $("#queue").innerHTML = items.length ? html :
+    `<div class="empty">${viewer ? "Nobody needs you right now." : "The queue is clear."} Kairos will bring people here when automation should stop.</div>`;
+}
+function card(i) {
+  const held = i.automations.length ? `<div class="held"><span class="lbl">${i.kind === "THANK" ? "Replacing" : "Paused"}</span>` +
+    i.automations.map(a => `<span class="msg" data-tip="Would have said: ${esc(a.draft_summary)}">${esc(a.workflow_name)} <span class="ch">· ${esc(a.channel)}</span></span>`).join("") + `</div>` : "";
+  const w = i.why || {}, you = viewer && viewer === i.staff_id, who = you ? "You" : esc(w.assignee_first || i.staff_label);
+  const knows = w.strength_pct != null ? `${who} ${you ? "know" : "knows"} ${esc(i.first_name)} ${w.is_top ? "best" : ""} (${w.strength_pct}%)${w.last_contact ? ` · last talked ${esc(w.last_contact)}` : ""}` : "";
+  const whyLine = i.kind === "REVIEW" ? "The Care Pastor reads prayer requests that Kairos can't or shouldn't judge."
+    : i.kind === "REMINDER" ? `${who} checked in last time.`
+    : [w.handed_from_first ? `Handed over by ${esc(w.handed_from_first)}` : "", knows].filter(Boolean).join(" · ");
+  const actor = viewer || i.staff_id;
+  let actions = "";
+  if (i.kind === "CARE" || i.kind === "REMINDER") actions = `
+    <textarea placeholder="What happened? e.g. Called and listened. Bringing a meal Thursday." data-f="note"></textarea>
+    <div class="actions">
+      <select data-f="channel"><option>Call</option><option>Visit</option><option>Text</option><option>Coffee</option><option>Note</option></select>
+      <button class="btn primary" data-act="contact" data-id="${i.item_id}">Log contact · remind me in 14 days</button>
+      <button class="btn" data-act="close" data-id="${i.item_id}">Log &amp; close care</button>
+    </div>`;
+  else if (i.kind === "THANK") actions = `
+    <textarea data-f="draft" style="min-height:110px">${esc(i.draft)}</textarea>
+    <div class="actions">
+      <button class="btn primary" data-act="approve" data-id="${i.item_id}">Approve &amp; send (mock)</button>
+      <button class="btn" data-act="dismiss" data-id="${i.item_id}">Dismiss</button>
+    </div>`;
+  else if (i.kind === "REVIEW") actions = `
+    <textarea placeholder="Note (required). Read the request in the care system, not here." data-f="note"></textarea>
+    <div class="actions">
+      <button class="btn" data-act="keep_hold" data-id="${i.item_id}">Keep holding</button>
+      <button class="btn primary" data-act="escalate_care" data-id="${i.item_id}">Needs care · route to closest person</button>
+      <button class="btn" data-act="release" data-id="${i.item_id}">Release message</button>
+    </div>`;
+  const opts = (i.handover_options || []).map(o => `<option value="${o.staff_id}">${esc(o.name)} · ${esc(o.role)}${o.strength_pct != null ? ` · knows them ${o.strength_pct}%` : ""} · ${o.load}/${o.capacity} this week${o.has_room ? "" : " (full)"}</option>`).join("");
+  const hand = opts ? `<div class="hand" hidden>
+      <div class="actions"><select data-f="hto" aria-label="Hand to">${opts}</select>
+      <input data-f="hnote" placeholder="Why? (optional) e.g. I have 7 this week; Andre knows the family">
+      <button class="btn primary" data-act="reassign" data-id="${i.item_id}">Hand over</button></div></div>` : "";
+  const urg = (i.kind === "CARE" || i.kind === "REMINDER") && i.urgency_level !== "normal"
+    ? `<span class="urg ${esc(i.urgency_level)}" data-tip="${esc(i.urgency_reason)}">${i.urgency_level === "urgent" ? "Urgent" : "High"}</span>` : "";
+  const brief = i.kind === "CARE" && i.draft ? `<details><summary>Private brief for ${esc(staffName(i.staff_id).split(" ")[0])}</summary><div class="brief">${esc(i.draft)}</div></details>` : "";
+  return `<article class="card k-${i.kind}" data-item="${i.item_id}" data-actor="${actor}">
+    <div class="card-h">${badge(i.kind)}${urg}<span class="title">${esc(i.headline)}</span>
+      <button class="link" data-person="${i.member_id}">${esc(i.first_name)} ${esc(i.last_name[0])}.</button>
+      <span class="who">→ ${esc(i.staff_label)}${i.kind === "REMINDER" ? ` · due ${fmtDate(i.due_date)}` : ""}</span></div>
+    <div class="summary">${esc(i.summary || i.detail)}</div>
+    ${held}
+    ${whyLine ? `<div class="why">${whyLine}</div>` : ""}${brief}
+    <div class="actions" style="margin-top:2px"><button class="btn" data-toggle>${i.kind === "THANK" ? "Review thank-you" : i.kind === "REVIEW" ? "Review hold" : "Log what happened"}</button>
+    ${hand ? `<button class="btn" data-hand>Hand to…</button>` : ""}</div>
+    <div class="respond" hidden>${actions}</div>${hand}<div class="err" data-f="err"></div></article>`;
+}
+$("#qfilters").addEventListener("click", e => { const b = e.target.closest(".fchip"); if (!b) return; qKind = b.dataset.k; loadQueue(); });
+$("#queue").addEventListener("click", async e => {
+  const p = e.target.closest("[data-person]"); if (p) return openPerson(p.dataset.person);
+  const tg = e.target.closest("[data-toggle]");
+  if (tg) { const r = $(".respond", tg.closest(".card")); r.hidden = !r.hidden; tg.hidden = true; $("textarea", r)?.focus(); return; }
+  const hd = e.target.closest("[data-hand]");
+  if (hd) { const h = $(".hand", hd.closest(".card")); h.hidden = !h.hidden; hd.hidden = true; $("select", h)?.focus(); return; }
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const c = b.closest(".card"), id = b.dataset.id, staff_id = c.dataset.actor;
+  const v = f => ($(`[data-f="${f}"]`, c) || {}).value;
+  b.disabled = true; $('[data-f="err"]', c).textContent = "";
+  try {
+    const act = b.dataset.act;
+    if (act === "contact" || act === "close") {
+      const r = await api(`/api/queue/${id}/contact`, { staff_id, note: v("note"), channel: v("channel"), close_care: act === "close" });
+      toast(r.reminder ? `Contact logged by ${staffName(staff_id)}. Follow-up reminder set for ${fmtDate(r.reminder.due_date)}.` : "Contact logged; care closed.");
+    } else if (act === "reassign") {
+      const r = await api(`/api/queue/${id}/reassign`, { staff_id, to_staff_id: v("hto"), note: v("hnote") || "" });
+      toast(`Handed to ${r.to}. It's now in their queue, and the audit log records why.`);
+    } else if (act === "approve") {
+      await api(`/api/queue/${id}/approve`, { staff_id, draft: v("draft") }); toast("Thank-you approved and sent (mock). The scheduled ask stays cancelled.");
+    } else {
+      const r = await api(`/api/queue/${id}/resolve`, { staff_id, resolution: act, note: v("note") || (act === "dismiss" ? "Dismissed from queue" : "") });
+      toast(r.action);
+    }
+    await refresh();
+  } catch (err) { $('[data-f="err"]', c).textContent = err.message; b.disabled = false; }
+});
+
+/* ---------- decisions ---------- */
+async function loadDecisions() {
+  const rows = await api("/api/decisions" + (showRoutine ? "?include_routine=true" : ""));
+  const counts = rows.reduce((a, r) => (a[r.decision] = (a[r.decision] || 0) + 1, a), {});
+  $("#dfilters").innerHTML = ["", ...DEC].map(k => `<button class="fchip" aria-pressed="${dFilter === k}" data-k="${k}">${k ? `<span class="dot d-${k}"></span>${k} · ${counts[k] || 0}` : `All · ${rows.length}`}</button>`).join("") +
+    `<label class="chip" style="margin-left:auto"><input type="checkbox" id="showRoutine" ${showRoutine ? "checked" : ""}> show routine pass-through</label>`;
+  const STATUS = { sent_mock: "sent (mock)", blocked: "blocked", held: "held", replaced_pending: "thank-you pending", replaced_sent: "thank-you sent", released_sent: "released by person" };
+  const r = rows.filter(x => !dFilter || x.decision === dFilter);
+  $("#dtable").innerHTML = `<thead><tr><th>Person</th><th>Scheduled</th><th>Send</th><th>Decision</th><th>Outcome</th><th>Trigger</th><th>Why</th></tr></thead><tbody>` +
+    r.map(x => `<tr><td><button class="link" data-person="${x.member_id}">${esc(x.first_name)} ${esc(x.last_name)}</button></td>
+      <td>${esc(x.workflow_name)}</td><td>${fmtDate(x.scheduled_send_at)}</td><td>${badge(x.decision)}</td>
+      <td>${esc(STATUS[x.send_status] || x.send_status)}${x.automation_action === "CHANGE" && x.decision === "ASK" ? " · softened" : ""}</td>
+      <td>${x.guardrail_trigger ? `<span class="tag">${esc(x.guardrail_trigger)}</span>` : ""}</td><td class="reason-c">${esc(x.reason)}</td></tr>`).join("") + "</tbody>";
+}
+$("#dfilters").addEventListener("click", e => { const b = e.target.closest(".fchip"); if (b) { dFilter = b.dataset.k; loadDecisions(); } });
+$("#dfilters").addEventListener("change", e => { if (e.target.id === "showRoutine") { showRoutine = e.target.checked; loadDecisions(); } });
+$("#dtable").addEventListener("click", e => { const p = e.target.closest("[data-person]"); if (p) openPerson(p.dataset.person); });
+
+/* ---------- audit ---------- */
+const AEV = { "": "All", decision: "Decisions", queued: "Queued", care_contact: "Contacts", reassigned: "Handovers", reminder_created: "Reminders", thank_you_approved: "Thank-yous" };
+async function loadAudit() {
+  const rows = await api("/api/audit?limit=400" + (aFilter ? `&event=${aFilter}` : ""));
+  $("#afilters").innerHTML = Object.entries(AEV).map(([k, v]) => `<button class="fchip" aria-pressed="${aFilter === k}" data-k="${k}">${v}</button>`).join("");
+  $("#atable").innerHTML = `<thead><tr><th>Date</th><th>Actor</th><th>Event</th><th>Person</th><th>Scheduled</th><th>Kairos / person did</th><th>Why</th><th>Routed to</th></tr></thead><tbody>` +
+    rows.map(x => `<tr><td style="white-space:nowrap">${fmtDate(x.sim_date)}</td>
+      <td>${x.actor_type === "human" ? esc(staffName(x.actor)) : esc(x.actor)}<div class="s" style="color:var(--text-muted);font-size:11px">${esc(x.actor_type)}</div></td>
+      <td><span class="tag">${esc(x.event)}</span>${x.decision ? " " + badge(x.decision) : ""}</td>
+      <td>${x.member_id ? `<button class="link" data-person="${x.member_id}">${esc(x.first_name || x.member_id)}</button>` : ""}</td>
+      <td class="reason-c" style="min-width:200px">${esc(x.scheduled)}</td><td>${esc(x.action_taken)}</td>
+      <td class="reason-c">${esc(x.reason)}</td><td>${esc(x.routed_to)}</td></tr>`).join("") + "</tbody>";
+}
+$("#afilters").addEventListener("click", e => { const b = e.target.closest(".fchip"); if (b) { aFilter = b.dataset.k; loadAudit(); } });
+$("#atable").addEventListener("click", e => { const p = e.target.closest("[data-person]"); if (p) openPerson(p.dataset.person); });
+
+/* ---------- person ---------- */
+async function openPerson(id) {
+  const p = await api(`/api/members/${id}` + (viewer ? `?viewer=${viewer}` : ""));
+  const m = p.member, s = p.signals;
+  const weeks = p.attendance_weeks;
+  const last8 = weeks.slice(8).filter(w => w.attended).length, prior8 = weeks.slice(0, 8).filter(w => w.attended).length;
+  const topPct = Math.max(...p.relationships.map(r => r.strength_pct), 0);
+  const label = l => l ? `<span class="tag">${esc(l.category)}${l.sacred_type ? " · " + esc(l.sacred_type) : ""}</span>${l.injection_attempt ? ` <span class="tag" style="color:#ff9a8a">injection attempt ignored</span>` : ""}` : "";
+  const traceStep = t => {
+    if (t.agent === "SacredMomentDetector") return `<div class="step"><b>Detector</b><span>${t.labels.length ? t.labels.map(l => `${esc(l.kind)} ${esc(l.on)}: ${l.consent ? (l.label ? esc(l.label.category) + (l.label.sacred_type ? "/" + esc(l.label.sacred_type) : "") + ` <span class="tag">${esc(l.label.source)}</span>` : "") : "skipped (no consent)"}`).join("<br>") : "no text on file"}</span></div>`;
+    if (t.agent === "DecisionAgent") return `<div class="step"><b>Decision</b><span>rule ${esc(t.rule)} → ${esc(t.decision)} / ${esc(t.action)}</span></div>`;
+    if (t.agent === "RoutingAgent") return `<div class="step"><b>Routing</b><span>${esc(t.why)}</span></div>`;
+    if (t.agent === "DraftAgent") return `<div class="step"><b>Draft</b><span>drafted ${esc(t.drafted)} text for a person to review</span></div>`;
+    if (t.agent === "GuardrailAgent") return `<div class="step"><b>Guardrail</b><span>${t.checks.map(c => `${esc(c.check)}: ${esc(c.result)}`).join(" · ") || "no checks needed"} → ${esc(t.final.join(" / "))}</span></div>`;
+    if (t.agent === "Orchestrator") return `<div class="step"><b>Orchestrator</b><span>${esc(t.error)}</span></div>`;
+    return "";
+  };
+  $("#drawer").innerHTML = `
+    <div class="card-h"><span class="title" style="font-size:16px">${esc(m.first_name)} ${esc(m.last_name)}</span>
+      <span class="tag">${esc(m.member_id)}</span><button class="btn" style="margin-left:auto" id="closeDrawer">Close</button></div>
+    <div class="sub" style="margin:4px 0 0">${esc(m.membership_status)} since ${fmtDate(m.member_since)} · group ${esc(m.small_group_id || "none")} · prefers ${esc(m.preferred_channel)}</div>
+
+    <h3>Kairos decided</h3>
+    ${p.decisions.map(d => `<div class="textitem"><div class="meta">${badge(d.decision)}<b style="color:var(--text-primary)">${esc(d.workflow_name)}</b> · ${fmtDate(d.scheduled_send_at)} · ${esc(d.automation_action)}${d.guardrail_trigger ? ` · <span class="tag">${esc(d.guardrail_trigger)}</span>` : ""}</div>
+      <div class="body">${esc(d.reason)}</div>
+      <details><summary>Agent trace</summary>${d.trace.map(traceStep).join("")}</details></div>`).join("")}
+
+    <h3>Attendance · last 16 weeks</h3>
+    <div class="strip" role="img" aria-label="Attended ${prior8} of 8, then ${last8} of 8">${weeks.map(w => `<div class="wk ${w.attended ? "on" : ""}" data-tip="${fmtDate(w.date)} · ${w.attended ? "attended" : "not attended"}"></div>`).join("")}</div>
+    <div class="strip-axis"><span>${fmtDate(weeks[0].date)} · ${prior8}/8</span><span>${last8}/8 · ${fmtDate(weeks[15].date)}</span></div>
+
+    <h3>Signals</h3>
+    <div class="kv">
+      <div><small>Trend</small>${esc(s.attendance_trend)}</div><div><small>Giving</small>${esc(s.giving_status)}</div>
+      <div><small>Volunteering</small>${esc(s.volunteer_status)}${p.volunteering[0] ? " · " + esc(p.volunteering[0].team) : ""}</div>
+      <div><small>Last human contact</small>${s.days_since_human_contact != null ? s.days_since_human_contact + " days ago" : "none on file"}</div>
+      <div><small>Asks last 30 days</small>${s.asks_last_30d}</div><div><small>Milestone</small>${esc((s.milestones_last_14d || "none").replaceAll("_", " "))}</div>
+    </div>
+
+    <h3>What Kairos read</h3>
+    ${p.texts.length ? p.texts.map(t => `<div class="textitem"><div class="meta">${esc(t.kind)} · ${fmtDate(t.date)}${t.status ? " · " + esc(t.status) : ""} ${label(t.label)}</div>
+      <div class="body">${t.restricted ? `<span class="lock">Not shared with Kairos. The member did not consent to AI reading. A person reads it in the care system.</span>`
+        : t.text ? esc(t.text) : `<span class="lock">Text visible to the care team only. Kairos shows you the label.</span>`}</div></div>`).join("") : `<div class="sub">No prayer requests or notes.</div>`}
+
+    <h3>Relationships</h3>
+    ${p.relationships.map(r => `<div class="rel" data-tip="${esc(r.name)} · ${esc(r.role)} · ${r.strength_pct}%"><span>${esc(r.name)} <span style="color:var(--text-muted)">· ${esc(r.role)}</span></span>
+      <div class="bar ${r.strength_pct === topPct ? "top" : ""}"><i style="width:${r.strength_pct}%"></i></div><span style="text-align:right;font-variant-numeric:tabular-nums">${r.strength_pct}%</span></div>`).join("")}
+
+    <h3>Human follow-up</h3>
+    ${p.contacts.length ? p.contacts.map(c => `<div class="textitem"><div class="meta">${fmtDate(c.contact_date)} · ${esc(staffName(c.staff_id))} · ${esc(c.channel)}</div><div class="body">${esc(c.note)}</div></div>`).join("") : `<div class="sub">No contacts logged yet.</div>`}
+    ${p.reminders.map(r => `<div class="sub" style="margin:4px 0">Reminder for ${esc(staffName(r.staff_id))} on ${fmtDate(r.due_date)} · ${esc(r.status)}</div>`).join("")}
+
+    <h3>Audit</h3>
+    <div class="tablewrap"><table><tbody>${p.audit.map(a => `<tr><td style="white-space:nowrap">${fmtDate(a.sim_date)}</td><td><span class="tag">${esc(a.event)}</span></td><td>${esc(a.action_taken)}</td><td class="reason-c">${esc(a.reason)}</td></tr>`).join("")}</tbody></table></div>`;
+  $("#drawer").hidden = $("#scrim").hidden = false;
+  $("#closeDrawer").onclick = closePerson;
+}
+function closePerson() { $("#drawer").hidden = $("#scrim").hidden = true; }
+$("#scrim").onclick = closePerson;
+document.addEventListener("keydown", e => { if (e.key === "Escape") closePerson(); });
+
+/* ---------- shell ---------- */
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === t));
+  ["queue", "decisions", "audit", "how"].forEach(n => $("#tab-" + n).hidden = n !== t.dataset.tab);
+  ({ queue: loadQueue, decisions: loadDecisions, audit: loadAudit })[t.dataset.tab]?.();
+});
+$("#viewer").onchange = e => { viewer = e.target.value; localStorageSet("kairos.viewer", viewer); qKind = ""; loadQueue(); };
+$("#advance").onclick = async () => { const r = await api("/api/clock/advance", { days: 14 }); toast(`Simulated date is now ${fmtDate(r.sim_date)}.`); refresh(); };
+$("#rerun").onclick = async e => { e.target.disabled = true; const r = await api("/api/run", {}); toast(`Re-ran ${r.decisions} decisions for ${r.members} people.`); e.target.disabled = false; refresh(); };
+async function refresh() {
+  await Promise.all([loadSummary(), loadQueue()]);
+  if (!$("#tab-decisions").hidden) loadDecisions();
+  if (!$("#tab-audit").hidden) loadAudit();
+}
+(async () => {
+  STAFF = await api("/api/staff");
+  $("#viewer").innerHTML = `<option value="">All staff</option>` + STAFF.map(s => `<option value="${s.staff_id}">${esc(s.name)} · ${esc(s.role)}</option>`).join("");
+  const as = new URLSearchParams(location.search).get("as");
+  if (as !== null) { viewer = as; localStorageSet("kairos.viewer", viewer); }
+  $("#viewer").value = viewer;
+  await refresh();
+  if (/^#M\d+$/.test(location.hash)) openPerson(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>

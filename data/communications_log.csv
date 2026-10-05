@@ -1,0 +1,159 @@
+message_id,member_id,sent_at,workflow_name,message_type,ask_category,is_ask,channel,opened
+MSG00011,M0022,2026-03-18 16:24:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00042,M0062,2026-03-21 13:37:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00099,M0145,2026-03-21 14:03:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00047,M0066,2026-03-21 18:34:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00009,M0019,2026-03-22 15:45:00,Event invitation,event_invite,none,No,email,Yes
+MSG00069,M0104,2026-03-22 17:25:00,Event invitation,event_invite,none,No,email,Yes
+MSG00007,M0016,2026-03-24 12:04:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00136,M0202,2026-03-25 09:17:00,Event invitation,event_invite,none,No,text,Yes
+MSG00080,M0121,2026-03-27 13:49:00,Event invitation,event_invite,none,No,email,Yes
+MSG00098,M0144,2026-03-27 16:40:00,Event invitation,event_invite,none,No,email,Yes
+MSG00041,M0060,2026-03-28 19:37:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00021,M0035,2026-03-29 19:13:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00081,M0123,2026-03-31 11:17:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00016,M0026,2026-03-31 13:05:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00109,M0159,2026-03-31 15:22:00,Event invitation,event_invite,none,No,email,Yes
+MSG00068,M0102,2026-04-04 15:08:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00049,M0072,2026-04-04 15:38:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00039,M0059,2026-04-06 13:26:00,Event invitation,event_invite,none,No,email,Yes
+MSG00097,M0142,2026-04-06 14:21:00,Event invitation,event_invite,none,No,email,Yes
+MSG00102,M0149,2026-04-09 10:58:00,Event invitation,event_invite,none,No,email,Yes
+MSG00124,M0180,2026-04-09 13:26:00,Event invitation,event_invite,none,No,text,Yes
+MSG00024,M0041,2026-04-11 13:44:00,Event invitation,event_invite,none,No,text,Yes
+MSG00158,M0239,2026-04-11 15:58:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00094,M0141,2026-04-12 11:47:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00091,M0132,2026-04-13 15:18:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00067,M0102,2026-04-14 10:56:00,Event invitation,event_invite,none,No,text,Yes
+MSG00003,M0007,2026-04-15 12:08:00,Event invitation,event_invite,none,No,text,Yes
+MSG00101,M0148,2026-04-16 12:38:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00155,M0233,2026-04-17 08:00:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00121,M0176,2026-04-17 08:24:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00115,M0169,2026-04-17 19:25:00,Event invitation,event_invite,none,No,text,Yes
+MSG00135,M0201,2026-04-20 19:52:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00023,M0038,2026-04-21 10:49:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00111,M0161,2026-04-22 18:18:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00119,M0172,2026-04-25 08:17:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00033,M0048,2026-04-25 11:08:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00074,M0112,2026-04-25 17:24:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00129,M0185,2026-04-26 14:42:00,Event invitation,event_invite,none,No,email,Yes
+MSG00030,M0045,2026-04-29 10:33:00,Event invitation,event_invite,none,No,email,Yes
+MSG00142,M0211,2026-05-01 19:34:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00066,M0100,2026-05-04 10:01:00,Event invitation,event_invite,none,No,email,Yes
+MSG00112,M0162,2026-05-05 12:53:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00117,M0170,2026-05-06 10:17:00,Event invitation,event_invite,none,No,email,Yes
+MSG00084,M0125,2026-05-06 10:52:00,Event invitation,event_invite,none,No,email,Yes
+MSG00113,M0163,2026-05-09 13:22:00,Event invitation,event_invite,none,No,email,Yes
+MSG00022,M0038,2026-05-11 11:04:00,Event invitation,event_invite,none,No,text,Yes
+MSG00054,M0085,2026-05-11 11:32:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00103,M0149,2026-05-11 12:16:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00002,M0005,2026-05-12 14:39:00,Event invitation,event_invite,none,No,email,Yes
+MSG00106,M0156,2026-05-15 16:28:00,Event invitation,event_invite,none,No,email,Yes
+MSG00116,M0169,2026-05-15 17:31:00,Event invitation,event_invite,none,No,text,Yes
+MSG00015,M0025,2026-05-15 18:00:00,Event invitation,event_invite,none,No,text,Yes
+MSG00052,M0081,2026-05-15 18:31:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00134,M0201,2026-05-16 14:13:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00104,M0151,2026-05-16 18:16:00,Event invitation,event_invite,none,No,text,Yes
+MSG00037,M0053,2026-05-18 13:48:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00005,M0009,2026-05-19 11:37:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00092,M0134,2026-05-19 12:26:00,Event invitation,event_invite,none,No,email,Yes
+MSG00085,M0126,2026-05-19 15:06:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00145,M0214,2026-05-23 09:28:00,Event invitation,event_invite,none,No,text,Yes
+MSG00064,M0098,2026-05-24 18:04:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00078,M0115,2026-05-25 19:03:00,Event invitation,event_invite,none,No,text,Yes
+MSG00036,M0052,2026-05-26 11:56:00,Event invitation,event_invite,none,No,email,Yes
+MSG00147,M0216,2026-05-28 16:16:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00156,M0237,2026-05-29 14:11:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00028,M0043,2026-05-30 09:11:00,Event invitation,event_invite,none,No,text,Yes
+MSG00082,M0123,2026-06-02 08:00:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00088,M0129,2026-06-02 09:46:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00032,M0047,2026-06-04 12:56:00,Event invitation,event_invite,none,No,email,Yes
+MSG00055,M0085,2026-06-09 08:15:00,Event invitation,event_invite,none,No,text,Yes
+MSG00006,M0011,2026-06-09 16:25:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00031,M0046,2026-06-10 10:16:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00143,M0212,2026-06-10 17:17:00,Event invitation,event_invite,none,No,email,Yes
+MSG00048,M0072,2026-06-11 08:51:00,Event invitation,event_invite,none,No,text,Yes
+MSG00114,M0165,2026-06-11 17:41:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00010,M0019,2026-06-11 18:43:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00051,M0081,2026-06-12 08:25:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00019,M0032,2026-06-13 08:09:00,Event invitation,event_invite,none,No,email,Yes
+MSG00130,M0188,2026-06-14 10:36:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00105,M0151,2026-06-15 18:48:00,Event invitation,event_invite,none,No,text,Yes
+MSG00071,M0107,2026-06-16 13:29:00,Event invitation,event_invite,none,No,text,Yes
+MSG00154,M0232,2026-06-16 19:01:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00017,M0030,2026-06-17 13:17:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00072,M0108,2026-06-17 13:24:00,Event invitation,event_invite,none,No,email,Yes
+MSG00070,M0104,2026-06-17 19:10:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00126,M0182,2026-06-20 17:49:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00100,M0146,2026-06-21 15:56:00,Event invitation,event_invite,none,No,email,Yes
+MSG00137,M0202,2026-06-22 15:54:00,Event invitation,event_invite,none,No,text,Yes
+MSG00065,M0100,2026-06-23 09:47:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00029,M0045,2026-06-23 16:45:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00146,M0214,2026-06-25 19:09:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00013,M0024,2026-06-26 13:39:00,Event invitation,event_invite,none,No,email,Yes
+MSG00026,M0042,2026-06-28 10:50:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00053,M0082,2026-06-29 10:43:00,Event invitation,event_invite,none,No,email,Yes
+MSG00079,M0121,2026-06-29 13:06:00,Event invitation,event_invite,none,No,email,Yes
+MSG00083,M0125,2026-06-30 09:47:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00128,M0184,2026-07-01 19:13:00,Event invitation,event_invite,none,No,email,Yes
+MSG00138,M0203,2026-07-01 19:32:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00108,M0158,2026-07-01 19:35:00,Event invitation,event_invite,none,No,email,Yes
+MSG00056,M0087,2026-07-02 13:33:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00087,M0128,2026-07-05 09:25:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00038,M0058,2026-07-06 12:14:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00044,M0064,2026-07-09 11:24:00,Event invitation,event_invite,none,No,email,Yes
+MSG00001,M0004,2026-07-10 16:17:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00140,M0209,2026-07-11 08:43:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00008,M0016,2026-07-13 15:04:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00118,M0172,2026-07-14 08:31:00,Event invitation,event_invite,none,No,email,Yes
+MSG00133,M0196,2026-07-17 11:09:00,Event invitation,event_invite,none,No,text,Yes
+MSG00050,M0077,2026-07-19 16:39:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00063,M0096,2026-07-22 08:52:00,Event invitation,event_invite,none,No,email,Yes
+MSG00025,M0041,2026-07-23 12:08:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00107,M0157,2026-07-23 15:43:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00004,M0007,2026-07-24 14:09:00,Event invitation,event_invite,none,No,text,Yes
+MSG00153,M0232,2026-07-25 12:52:00,Event invitation,event_invite,none,No,email,Yes
+MSG00045,M0064,2026-07-25 13:34:00,Event invitation,event_invite,none,No,email,Yes
+MSG00089,M0131,2026-07-26 17:58:00,Event invitation,event_invite,none,No,text,Yes
+MSG00043,M0062,2026-07-27 16:53:00,Event invitation,event_invite,none,No,text,Yes
+MSG00077,M0115,2026-07-28 10:40:00,Event invitation,event_invite,none,No,text,Yes
+MSG00060,M0090,2026-07-28 14:09:00,Event invitation,event_invite,none,No,email,Yes
+MSG00058,M0089,2026-07-29 17:04:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00035,M0052,2026-07-30 10:30:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00014,M0024,2026-07-31 18:02:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00139,M0203,2026-08-02 09:12:00,Event invitation,event_invite,none,No,text,Yes
+MSG00075,M0112,2026-08-02 15:35:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00110,M0161,2026-08-02 16:05:00,Event invitation,event_invite,none,No,email,Yes
+MSG00062,M0092,2026-08-02 18:19:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00090,M0132,2026-08-03 17:18:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00096,M0142,2026-08-05 10:33:00,Event invitation,event_invite,none,No,email,Yes
+MSG00046,M0065,2026-08-06 13:55:00,Event invitation,event_invite,none,No,email,Yes
+MSG00095,M0141,2026-08-07 15:12:00,Event invitation,event_invite,none,No,email,Yes
+MSG00073,M0108,2026-08-07 15:14:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00127,M0184,2026-08-07 19:53:00,Event invitation,event_invite,none,No,email,Yes
+MSG00027,M0043,2026-08-08 11:42:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00061,M0092,2026-08-10 12:50:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00040,M0060,2026-08-11 18:08:00,Event invitation,event_invite,none,No,email,Yes
+MSG00122,M0179,2026-08-12 15:50:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00144,M0212,2026-08-14 14:38:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00132,M0195,2026-08-15 18:18:00,Event invitation,event_invite,none,No,text,Yes
+MSG00149,M0222,2026-08-16 09:33:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00086,M0128,2026-08-18 14:46:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00076,M0114,2026-08-19 09:38:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00157,M0239,2026-08-19 12:36:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00120,M0176,2026-08-19 12:58:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00141,M0209,2026-08-20 10:51:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00020,M0035,2026-08-21 18:11:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00057,M0087,2026-08-22 13:03:00,Missed-service nudge,engagement_nudge,none,No,text,Yes
+MSG00018,M0032,2026-08-23 12:41:00,Event invitation,event_invite,none,No,email,Yes
+MSG00034,M0048,2026-08-25 08:59:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00125,M0181,2026-08-25 13:57:00,Event invitation,event_invite,none,No,email,Yes
+MSG00151,M0223,2026-08-25 15:28:00,Event invitation,event_invite,none,No,email,Yes
+MSG00123,M0180,2026-08-26 17:48:00,Event invitation,event_invite,none,No,text,Yes
+MSG00059,M0090,2026-08-29 14:09:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00150,M0223,2026-08-29 19:42:00,Missed-service nudge,engagement_nudge,none,No,email,Yes
+MSG00148,M0217,2026-09-12 19:38:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00012,M0023,2026-09-18 15:03:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00093,M0140,2026-09-21 19:14:00,Fall giving appeal,giving_appeal,giving,Yes,email,Yes
+MSG00152,M0229,2026-09-22 17:27:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes
+MSG00131,M0189,2026-09-25 18:52:00,Fall giving appeal,giving_appeal,giving,Yes,text,Yes

@@ -1,0 +1,14 @@
+staff_id,name,role,is_staff,weekly_care_capacity,small_group_id
+ST01,Rosa Lopez,Senior Pastor,Yes,3,
+ST02,Andre Valdez,Care Pastor,Yes,8,
+ST03,Wes Johnson,Executive Pastor,Yes,4,
+ST04,Gabriel Keller,Connections Pastor,Yes,6,
+ST05,Nathan Ortiz,Volunteer Coordinator,Yes,6,
+ST06,Lucia Ellis,Church Administrator,Yes,5,
+ST07,Kevin Tate,Youth Pastor,Yes,6,
+ST08,Omar Foster,Generosity Director,Yes,4,
+ST09,Rachel Robinson,Small Group Leader,No,4,G1
+ST10,Naomi Bishop,Small Group Leader,No,4,G2
+ST11,Antonio Brooks,Small Group Leader,No,4,G3
+ST12,Julian Shaw,Small Group Leader,No,4,G4
+ST13,Isabella Parker,Small Group Leader,No,4,G5

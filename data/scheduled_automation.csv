@@ -1,0 +1,250 @@
+automation_id,member_id,source_system,workflow_name,message_type,ask_category,is_ask,channel,scheduled_send_at,status,draft_summary
+AUT0026,M0024,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 08:00:00,Scheduled,This week at church.
+AUT0070,M0069,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-04 08:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0242,M0234,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0074,M0072,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 08:00:00,Scheduled,This week at church.
+AUT0097,M0096,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 08:00:00,Scheduled,This week at church.
+AUT0233,M0226,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0230,M0223,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 08:00:00,Scheduled,This week at church.
+AUT0148,M0147,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-04 08:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0037,M0035,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 08:00:00,Scheduled,This week at church.
+AUT0057,M0056,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 09:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0172,M0171,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 09:00:00,Scheduled,This week at church.
+AUT0194,M0192,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0188,M0186,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 09:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0009,M0008,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0100,M0099,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-04 09:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0156,M0155,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-04 10:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0030,M0027,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 10:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0106,M0105,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-04 10:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0105,M0104,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 10:00:00,Scheduled,This week at church.
+AUT0055,M0054,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 10:00:00,Scheduled,This week at church.
+AUT0229,M0222,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 10:00:00,Scheduled,This week at church.
+AUT0223,M0216,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-04 10:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0235,M0228,Planning Center Giving (mock),New giver upgrade ask,giving_appeal,giving,Yes,text,2026-10-04 10:00:00,Scheduled,Thanks for your first gift. Make it monthly and double your impact.
+AUT0116,M0115,Planning Center People (mock),Birthday message,birthday,none,No,text,2026-10-04 11:00:00,Scheduled,Happy birthday from your church family.
+AUT0140,M0138,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-04 11:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0047,M0045,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 11:00:00,Scheduled,This week at church.
+AUT0151,M0150,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 11:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0167,M0166,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 11:00:00,Scheduled,This week at church.
+AUT0020,M0018,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0207,M0204,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-04 12:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0118,M0117,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 12:00:00,Scheduled,This week at church.
+AUT0205,M0202,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 12:00:00,Scheduled,This week at church.
+AUT0018,M0016,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 12:00:00,Scheduled,This week at church.
+AUT0015,M0013,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 12:00:00,Scheduled,This week at church.
+AUT0080,M0079,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 13:00:00,Scheduled,This week at church.
+AUT0238,M0231,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 13:00:00,Scheduled,This week at church.
+AUT0068,M0067,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0094,M0093,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-04 13:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0195,M0193,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 13:00:00,Scheduled,This week at church.
+AUT0219,M0213,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0162,M0160,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0183,M0181,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 13:00:00,Scheduled,This week at church.
+AUT0187,M0185,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 13:00:00,Scheduled,This week at church.
+AUT0191,M0189,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,text,2026-10-04 13:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0001,M0001,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0213,M0209,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0231,M0224,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0158,M0157,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0198,M0195,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0246,M0237,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0110,M0110,Planning Center Groups (mock),Small group invitation,group_invite,participation,Yes,text,2026-10-04 14:00:00,Scheduled,Find your people. Join a small group this fall.
+AUT0249,M0240,Planning Center Calendar (mock),Event invitation,event_invite,none,No,email,2026-10-04 14:00:00,Scheduled,Join us for the fall family night.
+AUT0032,M0030,Planning Center Giving (mock),Generosity campaign: grow your giving,giving_appeal,giving,Yes,email,2026-10-04 14:00:00,Scheduled,Consider increasing your monthly gift as we plan for next year.
+AUT0051,M0050,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 14:00:00,Scheduled,This week at church.
+AUT0014,M0012,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 14:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0029,M0026,Planning Center Giving (mock),Generosity campaign: grow your giving,giving_appeal,giving,Yes,text,2026-10-04 14:00:00,Scheduled,Consider increasing your monthly gift as we plan for next year.
+AUT0147,M0146,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 15:00:00,Scheduled,This week at church.
+AUT0168,M0167,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 15:00:00,Scheduled,This week at church.
+AUT0177,M0175,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0142,M0140,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0011,M0010,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-04 15:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0119,M0118,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0202,M0199,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0007,M0006,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0113,M0113,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 15:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0243,M0235,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,text,2026-10-04 15:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0008,M0007,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 15:00:00,Scheduled,This week at church.
+AUT0038,M0036,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 15:00:00,Scheduled,This week at church.
+AUT0208,M0205,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 15:00:00,Scheduled,This week at church.
+AUT0220,M0214,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0054,M0053,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0117,M0116,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0136,M0134,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0178,M0176,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0179,M0177,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0186,M0184,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0210,M0206,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-04 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0239,M0231,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-04 16:00:00,Scheduled,Happy birthday from your church family.
+AUT0141,M0139,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-04 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0067,M0066,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0204,M0201,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0016,M0014,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0237,M0230,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-04 16:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0040,M0038,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-04 16:00:00,Scheduled,This week at church.
+AUT0137,M0135,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0096,M0095,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0144,M0143,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0035,M0033,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 08:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0033,M0031,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-05 08:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0165,M0164,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-05 08:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0076,M0074,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-05 08:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0046,M0044,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0073,M0071,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,text,2026-10-05 08:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0228,M0221,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-05 08:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0060,M0059,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 08:00:00,Scheduled,This week at church.
+AUT0002,M0002,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 08:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0173,M0172,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 09:00:00,Scheduled,This week at church.
+AUT0201,M0198,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0203,M0200,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 09:00:00,Scheduled,This week at church.
+AUT0222,M0215,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 09:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0236,M0229,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,text,2026-10-05 09:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0052,M0051,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 09:00:00,Scheduled,This week at church.
+AUT0041,M0039,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0125,M0123,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 09:00:00,Scheduled,This week at church.
+AUT0058,M0057,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0065,M0064,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 09:00:00,Scheduled,This week at church.
+AUT0042,M0040,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0050,M0049,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 09:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0135,M0133,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 10:00:00,Scheduled,This week at church.
+AUT0077,M0076,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 10:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0199,M0196,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 10:00:00,Scheduled,This week at church.
+AUT0196,M0194,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 10:00:00,Scheduled,This week at church.
+AUT0028,M0025,Planning Center People (mock),Birthday message,birthday,none,No,text,2026-10-05 10:00:00,Scheduled,Happy birthday from your church family.
+AUT0145,M0144,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0234,M0227,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0240,M0232,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0225,M0218,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 11:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0120,M0119,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 11:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0103,M0102,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0027,M0025,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0039,M0037,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-05 11:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0043,M0041,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0171,M0170,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 11:00:00,Scheduled,This week at church.
+AUT0175,M0174,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 12:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0025,M0023,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0224,M0217,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,text,2026-10-05 12:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0185,M0183,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-05 12:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0022,M0020,Planning Center Groups (mock),Small group invitation,group_invite,participation,Yes,email,2026-10-05 12:00:00,Scheduled,Find your people. Join a small group this fall.
+AUT0160,M0159,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 12:00:00,Scheduled,This week at church.
+AUT0152,M0151,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 12:00:00,Scheduled,This week at church.
+AUT0192,M0190,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0005,M0004,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0079,M0078,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0138,M0136,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 12:00:00,Scheduled,This week at church.
+AUT0071,M0070,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 12:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0245,M0236,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0004,M0003,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0121,M0120,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0063,M0062,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0154,M0153,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-05 13:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0127,M0125,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0123,M0121,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-05 13:00:00,Scheduled,Happy birthday from your church family.
+AUT0134,M0132,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0104,M0103,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0159,M0158,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0081,M0080,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0045,M0043,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0024,M0022,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0189,M0187,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0021,M0019,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0139,M0137,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0056,M0055,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0184,M0182,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0010,M0009,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 13:00:00,Scheduled,This week at church.
+AUT0023,M0021,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 14:00:00,Scheduled,This week at church.
+AUT0124,M0122,Planning Center Groups (mock),Small group invitation,group_invite,participation,Yes,text,2026-10-05 14:00:00,Scheduled,Find your people. Join a small group this fall.
+AUT0098,M0097,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,email,2026-10-05 14:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0091,M0090,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 14:00:00,Scheduled,This week at church.
+AUT0232,M0225,Planning Center Giving (mock),New giver upgrade ask,giving_appeal,giving,Yes,text,2026-10-05 14:00:00,Scheduled,Thanks for your first gift. Make it monthly and double your impact.
+AUT0143,M0141,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 14:00:00,Scheduled,This week at church.
+AUT0092,M0091,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 14:00:00,Scheduled,This week at church.
+AUT0059,M0058,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 14:00:00,Scheduled,This week at church.
+AUT0101,M0100,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 15:00:00,Scheduled,This week at church.
+AUT0180,M0178,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 15:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0130,M0129,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 15:00:00,Scheduled,This week at church.
+AUT0164,M0163,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 15:00:00,Scheduled,This week at church.
+AUT0211,M0208,Planning Center Giving (mock),Lapsed donor re-engagement,giving_reengagement,giving,Yes,text,2026-10-05 15:00:00,Scheduled,We have missed your generosity. Your recurring gift has paused. Restart it today to keep the mission going.
+AUT0093,M0092,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 15:00:00,Scheduled,This week at church.
+AUT0112,M0112,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 15:00:00,Scheduled,This week at church.
+AUT0114,M0114,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0157,M0156,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0181,M0179,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0090,M0089,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0182,M0180,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0044,M0042,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0149,M0148,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0075,M0073,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0153,M0152,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-05 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0226,M0219,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0064,M0063,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,email,2026-10-05 16:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0126,M0124,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-05 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0111,M0111,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-05 16:00:00,Scheduled,This week at church.
+AUT0132,M0131,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 08:00:00,Scheduled,This week at church.
+AUT0048,M0047,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 08:00:00,Scheduled,This week at church.
+AUT0193,M0191,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 08:00:00,Scheduled,This week at church.
+AUT0206,M0203,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 08:00:00,Scheduled,This week at church.
+AUT0084,M0083,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-06 08:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0082,M0081,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 08:00:00,Scheduled,This week at church.
+AUT0247,M0238,Planning Center Services (mock),Volunteer recruiting blast,volunteer_ask,volunteering,Yes,text,2026-10-06 09:00:00,Scheduled,We need more volunteers. Sign up to serve this month.
+AUT0174,M0173,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 09:00:00,Scheduled,This week at church.
+AUT0200,M0197,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 09:00:00,Scheduled,This week at church.
+AUT0086,M0085,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 09:00:00,Scheduled,This week at church.
+AUT0170,M0169,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 09:00:00,Scheduled,This week at church.
+AUT0209,M0205,Planning Center People (mock),Birthday message,birthday,none,No,text,2026-10-06 09:00:00,Scheduled,Happy birthday from your church family.
+AUT0221,M0214,Planning Center People (mock),Birthday message,birthday,none,No,text,2026-10-06 09:00:00,Scheduled,Happy birthday from your church family.
+AUT0095,M0094,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 10:00:00,Scheduled,This week at church.
+AUT0108,M0108,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 10:00:00,Scheduled,This week at church.
+AUT0012,M0010,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-06 10:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0115,M0115,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 10:00:00,Scheduled,This week at church.
+AUT0216,M0211,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 10:00:00,Scheduled,This week at church.
+AUT0034,M0032,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 11:00:00,Scheduled,This week at church.
+AUT0062,M0061,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 11:00:00,Scheduled,This week at church.
+AUT0069,M0068,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 11:00:00,Scheduled,This week at church.
+AUT0241,M0233,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0218,M0212,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0003,M0002,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-06 12:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0061,M0060,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0053,M0052,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0169,M0168,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0102,M0101,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0155,M0154,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0107,M0106,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-06 12:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0248,M0239,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 12:00:00,Scheduled,This week at church.
+AUT0133,M0131,Planning Center People (mock),Birthday message,birthday,none,No,text,2026-10-06 13:00:00,Scheduled,Happy birthday from your church family.
+AUT0131,M0130,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-06 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0087,M0086,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-06 13:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0146,M0145,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0049,M0048,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0031,M0028,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0099,M0098,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0215,M0210,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-06 13:00:00,Scheduled,Happy birthday from your church family.
+AUT0214,M0210,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0212,M0208,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-06 13:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0017,M0015,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 13:00:00,Scheduled,This week at church.
+AUT0066,M0065,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 14:00:00,Scheduled,This week at church.
+AUT0085,M0084,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-06 14:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0109,M0109,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,text,2026-10-06 14:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0129,M0128,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 14:00:00,Scheduled,This week at church.
+AUT0072,M0070,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-06 14:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0150,M0149,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 14:00:00,Scheduled,This week at church.
+AUT0244,M0235,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,text,2026-10-06 15:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0122,M0121,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 15:00:00,Scheduled,This week at church.
+AUT0128,M0126,Planning Center Giving (mock),Generosity campaign: grow your giving,giving_appeal,giving,Yes,text,2026-10-06 15:00:00,Scheduled,Consider increasing your monthly gift as we plan for next year.
+AUT0036,M0034,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 15:00:00,Scheduled,This week at church.
+AUT0078,M0077,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-06 15:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0088,M0087,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 15:00:00,Scheduled,This week at church.
+AUT0190,M0188,Planning Center Giving (mock),Building fund campaign,giving_appeal,giving,Yes,email,2026-10-06 15:00:00,Scheduled,Be part of our building project. Make a gift before the campaign ends.
+AUT0019,M0017,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 15:00:00,Scheduled,This week at church.
+AUT0013,M0011,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 15:00:00,Scheduled,This week at church.
+AUT0089,M0088,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 16:00:00,Scheduled,This week at church.
+AUT0227,M0220,Planning Center Giving (mock),Fall giving appeal,giving_appeal,giving,Yes,email,2026-10-06 16:00:00,Scheduled,Help us reach our fall goal. Give today.
+AUT0166,M0165,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,text,2026-10-06 16:00:00,Scheduled,This week at church.
+AUT0176,M0174,Planning Center People (mock),Missed-service nudge,engagement_nudge,none,No,email,2026-10-06 16:00:00,Scheduled,We missed you on Sunday. We hope to see you soon.
+AUT0006,M0005,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 16:00:00,Scheduled,This week at church.
+AUT0083,M0082,Planning Center Publishing (mock),Weekly newsletter,newsletter,none,No,email,2026-10-06 16:00:00,Scheduled,This week at church.
+AUT0217,M0211,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-07 12:00:00,Scheduled,Happy birthday from your church family.
+AUT0197,M0194,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-07 14:00:00,Scheduled,Happy birthday from your church family.
+AUT0161,M0159,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-08 09:00:00,Scheduled,Happy birthday from your church family.
+AUT0163,M0161,Planning Center People (mock),Birthday message,birthday,none,No,email,2026-10-08 12:00:00,Scheduled,Happy birthday from your church family.

@@ -1,0 +1,10 @@
+.env
+.venv/
+kairos.db*
+__pycache__/
+*.pyc
+predictions.csv
+mismatches.csv
+rw*.csv
+.DS_Store
+docs/DECISIONS.md

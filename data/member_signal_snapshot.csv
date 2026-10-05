@@ -1,0 +1,241 @@
+member_id,as_of,tenure_months,attended_last_8w,attended_prior_8w,weeks_since_last_attended,attendance_trend,giving_status,last_gift_date,last_gift_amount,days_since_last_gift,days_since_last_one_time_gift,gifts_last_12m,volunteer_status,days_since_last_served,open_prayer_requests,days_since_last_prayer,last_prayer_consent_for_ai,pastoral_notes_last_30d,days_since_human_contact,last_ask_date,days_since_last_ask,asks_last_30d,appeals_opt_in,email_opt_in,sms_opt_in,is_minor,milestones_last_14d,scheduled_automations_next_7d
+M0001,2026-10-03,97,5,8,0,down,Periodic,2026-09-03,60.0,30.0,30.0,4,None,,1,7.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0002,2026-10-03,48,3,7,5,down,Paused recurring,2026-08-08,100.0,56.0,,11,Inactive,45.0,1,12.0,Yes,0,,,,0,Yes,Yes,No,No,,2
+M0003,2026-10-03,109,7,6,0,steady,Periodic,2026-09-02,70.0,31.0,31.0,4,None,,1,9.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0004,2026-10-03,60,8,7,0,steady,Active recurring,2026-09-09,75.0,24.0,,12,Active,11.0,0,,NA,0,,2026-07-10,84.0,0,Yes,Yes,Yes,No,,1
+M0005,2026-10-03,19,0,5,8,sharp_down,None,,,,,0,None,,0,83.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0006,2026-10-03,60,5,6,0,steady,Periodic,2026-08-19,45.0,45.0,45.0,3,None,,1,3.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0007,2026-10-03,112,4,1,1,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0008,2026-10-03,97,8,8,0,steady,Periodic,2026-08-31,85.0,33.0,33.0,4,None,,1,5.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0009,2026-10-03,13,1,1,3,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0010,2026-10-03,73,3,8,5,down,Paused recurring,2026-08-12,60.0,52.0,,11,Inactive,56.0,1,5.0,Yes,0,,,,0,Yes,Yes,No,No,,2
+M0011,2026-10-03,88,6,6,0,steady,Periodic,2026-09-11,50.0,22.0,22.0,1,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0012,2026-10-03,36,5,7,1,down,None,,,,,0,Active,15.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_2y,1
+M0013,2026-10-03,95,5,5,0,steady,None,,,,,0,None,,0,82.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0014,2026-10-03,58,7,5,0,up,Periodic,2026-06-21,65.0,104.0,104.0,3,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0015,2026-10-03,34,7,6,0,steady,Periodic,2026-08-12,60.0,52.0,52.0,3,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0016,2026-10-03,90,4,6,1,down,None,,,,,0,None,,0,,NA,0,,2026-03-24,192.0,0,Yes,Yes,Yes,No,,1
+M0017,2026-10-03,60,4,4,0,steady,Periodic,2026-08-26,50.0,38.0,38.0,1,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0018,2026-10-03,24,7,4,0,up,Periodic,2026-09-03,75.0,30.0,30.0,3,None,,0,,NA,1,3.0,,,0,Yes,Yes,Yes,No,,1
+M0019,2026-10-03,32,2,3,0,steady,None,,,,,0,None,,0,,NA,0,,2026-06-11,113.0,0,Yes,Yes,Yes,No,,1
+M0020,2026-10-03,1,4,0,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0021,2026-10-03,22,3,4,0,steady,Active recurring,2026-09-22,100.0,11.0,,12,Active,20.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0022,2026-10-03,78,4,3,1,steady,None,,,,,0,Active,1.0,0,,NA,0,,2026-03-18,198.0,0,Yes,Yes,No,No,,1
+M0023,2026-10-03,36,7,7,1,steady,Active recurring,2026-09-30,50.0,3.0,,12,None,,0,,NA,0,,2026-09-18,14.0,1,Yes,Yes,Yes,No,,1
+M0024,2026-10-03,8,5,5,0,steady,None,,,,,0,None,,0,,NA,0,,2026-07-31,63.0,0,Yes,Yes,No,No,,1
+M0025,2026-10-03,103,2,3,0,steady,Active recurring,2026-09-11,20.0,22.0,,5,Active,16.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,2
+M0026,2026-10-03,48,5,7,0,down,Active recurring,2026-09-28,40.0,5.0,,12,None,,0,,NA,0,,2026-03-31,185.0,0,Yes,Yes,No,No,,1
+M0027,2026-10-03,73,8,7,0,steady,Periodic,2026-08-31,75.0,33.0,33.0,4,None,,0,,NA,1,,,,0,Yes,Yes,Yes,No,impact_update,1
+M0028,2026-10-03,28,0,1,12,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0029,2026-10-03,10,0,0,16,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,No,Yes,No,,0
+M0030,2026-10-03,36,6,6,2,steady,Active recurring,2026-09-19,60.0,14.0,,12,None,,0,,NA,0,,2026-06-17,107.0,0,Yes,Yes,No,No,,1
+M0031,2026-10-03,121,7,8,0,steady,Active recurring,2026-09-29,750.0,4.0,,12,Active,3.0,1,5.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0032,2026-10-03,99,3,2,3,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0033,2026-10-03,85,1,7,7,sharp_down,Paused recurring,2026-08-15,100.0,49.0,,11,Inactive,50.0,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0034,2026-10-03,94,3,2,1,steady,None,,,,,0,Active,15.0,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0035,2026-10-03,45,4,5,0,steady,Periodic,2026-05-28,55.0,128.0,128.0,3,None,,0,,NA,0,,2026-08-21,42.0,0,Yes,Yes,Yes,No,,1
+M0036,2026-10-03,20,7,7,0,steady,Periodic,2026-08-24,40.0,40.0,40.0,3,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0037,2026-10-03,109,6,5,0,steady,None,,,,,0,Active,4.0,1,2.0,Yes,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_5y,1
+M0038,2026-10-03,14,6,5,0,steady,None,,,,,0,None,,0,,NA,0,,2026-04-21,164.0,0,Yes,Yes,Yes,No,,1
+M0039,2026-10-03,48,8,8,0,steady,Periodic,2026-09-28,90.0,5.0,5.0,4,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0040,2026-10-03,12,6,6,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,Yes,,1
+M0041,2026-10-03,19,0,0,23,none,None,,,,,0,None,,0,,NA,0,,2026-07-23,71.0,0,Yes,Yes,No,No,,1
+M0042,2026-10-03,62,6,5,0,steady,None,,,,,0,Active,16.0,0,,NA,0,,2026-06-28,96.0,0,Yes,Yes,Yes,No,,1
+M0043,2026-10-03,3,7,4,0,up,None,,,,,0,None,,0,,NA,0,,2026-08-08,55.0,0,Yes,Yes,No,No,,1
+M0044,2026-10-03,85,7,7,1,steady,Periodic,2026-10-01,105.0,2.0,2.0,4,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0045,2026-10-03,109,3,5,1,down,None,,,,,0,None,,0,,NA,0,,2026-06-23,101.0,0,Yes,Yes,Yes,No,,1
+M0046,2026-10-03,106,2,3,2,steady,None,,,,,0,Active,3.0,0,,NA,0,,,,0,Yes,No,Yes,No,,0
+M0047,2026-10-03,54,1,1,5,steady,None,,,,,0,Active,10.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_3y,1
+M0048,2026-10-03,64,8,6,0,up,None,,,,,0,None,,0,,NA,0,,2026-08-25,38.0,0,Yes,Yes,No,No,,1
+M0049,2026-10-03,24,7,7,0,steady,Active recurring,2026-10-01,100.0,2.0,,12,Active,14.0,0,,NA,0,,,,0,Yes,Yes,No,No,recurring_gift_anniversary_12m,1
+M0050,2026-10-03,7,7,5,0,up,None,,,,,0,None,,1,26.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0051,2026-10-03,113,6,3,0,up,Periodic,2026-08-20,65.0,44.0,44.0,2,Active,24.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0052,2026-10-03,6,0,0,17,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0053,2026-10-03,103,4,1,1,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0054,2026-10-03,104,0,0,99,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0055,2026-10-03,27,7,8,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0056,2026-10-03,85,6,7,0,steady,Periodic,2026-09-03,55.0,30.0,30.0,3,None,,0,,NA,1,4.0,,,0,Yes,Yes,Yes,No,,1
+M0057,2026-10-03,24,4,3,3,steady,Paused recurring,2026-08-22,20.0,42.0,,11,None,,1,8.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0058,2026-10-03,108,7,3,0,up,Active recurring,2026-09-23,100.0,10.0,,5,Active,1.0,0,,NA,0,,2026-07-06,88.0,0,Yes,Yes,No,No,volunteer_anniversary_1y,1
+M0059,2026-10-03,100,4,3,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0060,2026-10-03,56,7,5,0,up,Periodic,2026-08-16,50.0,48.0,48.0,5,None,,0,,NA,0,,2026-03-28,188.0,0,Yes,Yes,Yes,No,,1
+M0061,2026-10-03,19,3,4,3,steady,Active recurring,2026-09-28,200.0,5.0,,12,None,,0,83.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0062,2026-10-03,99,7,7,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0063,2026-10-03,146,5,6,1,steady,None,,,,,0,Active,14.0,1,1.0,Yes,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_8y,1
+M0064,2026-10-03,82,2,4,1,down,None,,,,,0,Active,3.0,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0065,2026-10-03,71,3,5,2,down,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0066,2026-10-03,77,1,0,2,steady,None,,,,,0,Active,28.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0067,2026-10-03,48,3,1,4,up,Paused recurring,2026-08-11,30.0,53.0,,11,None,,1,9.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0068,2026-10-03,75,0,0,20,none,Active recurring,2026-09-26,30.0,7.0,,10,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0069,2026-10-03,109,8,6,0,up,Periodic,2026-09-06,60.0,27.0,27.0,3,None,,0,,NA,1,3.0,,,0,Yes,Yes,Yes,No,,1
+M0070,2026-10-03,73,2,8,6,sharp_down,Paused recurring,2026-08-17,150.0,47.0,,11,Inactive,58.0,1,10.0,Yes,0,,,,0,Yes,Yes,No,No,,2
+M0071,2026-10-03,109,4,6,4,down,Paused recurring,2026-08-17,60.0,47.0,,11,None,,1,4.0,No,0,,,,0,Yes,Yes,No,No,,1
+M0072,2026-10-03,7,3,3,1,steady,Active recurring,2026-09-22,75.0,11.0,,6,None,,0,,NA,0,,2026-04-04,181.0,0,Yes,Yes,Yes,No,,1
+M0073,2026-10-03,48,7,7,0,steady,Periodic,2026-09-26,70.0,7.0,7.0,4,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0074,2026-10-03,97,3,7,0,down,Periodic,2026-08-18,60.0,46.0,46.0,4,None,,1,8.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0075,2026-10-03,83,4,6,1,down,None,,,,,0,Active,4.0,0,,NA,0,,,,0,Yes,No,No,No,,0
+M0076,2026-10-03,60,2,7,4,sharp_down,Paused recurring,2026-08-18,60.0,46.0,,11,None,,1,6.0,No,0,,,,0,Yes,Yes,Yes,No,,1
+M0077,2026-10-03,48,6,7,0,steady,Active recurring,2026-09-28,75.0,5.0,,12,Active,22.0,0,,NA,0,,2026-07-19,75.0,0,Yes,Yes,No,No,,1
+M0078,2026-10-03,36,6,8,0,down,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,Yes,,1
+M0079,2026-10-03,72,4,6,0,down,Active recurring,2026-09-22,30.0,11.0,,12,None,,1,23.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0080,2026-10-03,109,7,6,0,steady,Active recurring,2026-09-23,100.0,10.0,,12,Active,29.0,1,3.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0081,2026-10-03,108,2,1,3,steady,None,,,,,0,None,,0,80.0,Yes,0,,2026-06-12,112.0,0,Yes,Yes,No,No,,1
+M0082,2026-10-03,12,5,2,0,up,None,,,,,0,Active,16.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0083,2026-10-03,85,7,7,1,steady,Active recurring,2026-09-27,50.0,6.0,,12,Active,29.0,1,8.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0084,2026-10-03,60,7,7,0,steady,Active recurring,2026-09-20,75.0,13.0,,12,Active,29.0,1,6.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0085,2026-10-03,13,4,5,0,steady,Active recurring,2026-09-26,20.0,7.0,,12,None,,0,,NA,0,,2026-05-11,144.0,0,Yes,Yes,No,No,,1
+M0086,2026-10-03,48,4,5,1,steady,Periodic,2026-10-01,500.0,2.0,2.0,4,Active,19.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,major_gift,1
+M0087,2026-10-03,15,2,3,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0088,2026-10-03,61,6,6,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0089,2026-10-03,6,3,4,1,steady,Active recurring,2026-09-24,20.0,9.0,,7,None,,0,,NA,0,,2026-07-29,65.0,0,Yes,Yes,Yes,No,,1
+M0090,2026-10-03,15,0,0,19,none,Periodic,2026-08-03,70.0,61.0,61.0,3,None,,0,,NA,0,,2026-08-29,34.0,0,Yes,Yes,Yes,No,,1
+M0091,2026-10-03,51,3,4,1,steady,None,,,,,0,None,,0,101.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0092,2026-10-03,21,4,5,3,steady,None,,,,,0,None,,0,,NA,0,,2026-08-10,53.0,0,Yes,Yes,Yes,No,,1
+M0093,2026-10-03,97,4,6,4,down,None,,,,,0,Active,13.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_3y,1
+M0094,2026-10-03,10,3,0,1,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0095,2026-10-03,60,2,3,6,steady,Paused recurring,2026-08-22,20.0,42.0,,11,None,,0,,NA,1,5.0,,,0,Yes,Yes,No,No,,1
+M0096,2026-10-03,22,1,0,2,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0097,2026-10-03,73,2,8,6,sharp_down,Paused recurring,2026-08-15,200.0,49.0,,11,Inactive,58.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0098,2026-10-03,15,4,6,4,down,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0099,2026-10-03,60,5,8,3,down,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,No,No,,1
+M0100,2026-10-03,81,1,0,1,steady,None,,,,,0,None,,1,16.0,Yes,0,,2026-06-23,101.0,0,Yes,Yes,Yes,No,,1
+M0101,2026-10-03,110,3,4,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0102,2026-10-03,84,3,2,0,steady,None,,,,,0,None,,0,,NA,0,,2026-04-04,181.0,0,Yes,Yes,Yes,No,,1
+M0103,2026-10-03,60,5,6,1,steady,Periodic,2026-08-31,55.0,33.0,33.0,4,None,,1,2.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0104,2026-10-03,33,6,4,0,up,Active recurring,2026-09-19,75.0,14.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0105,2026-10-03,85,4,6,2,down,None,,,,,0,None,,0,,NA,1,8.0,,,0,Yes,Yes,Yes,No,,1
+M0106,2026-10-03,24,4,5,3,steady,Periodic,2026-08-10,115.0,54.0,54.0,5,None,,1,6.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0107,2026-10-03,112,4,3,4,steady,Active recurring,2026-09-28,100.0,5.0,,12,None,,0,86.0,Yes,0,,,,0,Yes,No,No,No,,0
+M0108,2026-10-03,77,1,1,5,steady,None,,,,,0,None,,0,,NA,0,,2026-08-07,56.0,0,Yes,Yes,Yes,No,,1
+M0109,2026-10-03,121,5,5,0,steady,None,,,,,0,None,,1,10.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0110,2026-10-03,0,3,0,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0111,2026-10-03,92,6,3,1,up,Active recurring,2026-09-10,30.0,23.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0112,2026-10-03,61,2,4,1,down,Active recurring,2026-09-28,200.0,5.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0113,2026-10-03,16,7,6,0,steady,Periodic,2026-08-24,55.0,40.0,40.0,4,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0114,2026-10-03,23,2,6,0,sharp_down,Active recurring,2026-09-18,100.0,15.0,,3,None,,0,,NA,0,,2026-08-19,44.0,0,Yes,Yes,No,No,,1
+M0115,2026-10-03,12,2,5,1,down,Active recurring,2026-09-12,200.0,21.0,,12,Active,6.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,2
+M0116,2026-10-03,109,6,6,0,steady,Active recurring,2026-09-28,50.0,5.0,,12,Active,28.0,0,136.0,Yes,0,109.0,,,0,Yes,Yes,Yes,No,,1
+M0117,2026-10-03,41,0,0,20,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0118,2026-10-03,85,6,8,0,down,Active recurring,2026-09-24,50.0,9.0,,12,None,,0,,NA,0,,,,0,No,Yes,No,No,,1
+M0119,2026-10-03,73,1,5,7,sharp_down,Paused recurring,2026-08-12,150.0,52.0,,11,Inactive,72.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0120,2026-10-03,0,0,0,99,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0121,2026-10-03,17,0,5,11,sharp_down,Periodic,2026-07-22,55.0,73.0,73.0,4,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,2
+M0122,2026-10-03,1,4,0,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0123,2026-10-03,52,4,1,0,up,Periodic,2026-09-02,70.0,31.0,31.0,2,None,,0,64.0,Yes,0,,2026-06-02,122.0,0,Yes,Yes,No,No,,1
+M0124,2026-10-03,109,6,6,0,steady,Active recurring,2026-09-26,100.0,7.0,,12,Active,7.0,1,3.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0125,2026-10-03,23,4,5,0,steady,Active recurring,2026-09-25,200.0,8.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0126,2026-10-03,60,7,8,0,steady,Active recurring,2026-09-27,60.0,6.0,,12,None,,0,,NA,0,,2026-05-19,136.0,0,Yes,Yes,Yes,No,,1
+M0127,2026-10-03,25,4,3,2,steady,None,,,,,0,Active,14.0,0,,NA,0,,,,0,Yes,No,Yes,No,,0
+M0128,2026-10-03,27,4,6,1,down,Periodic,2026-07-04,70.0,91.0,91.0,3,None,,0,,NA,0,,2026-08-18,45.0,0,Yes,Yes,No,No,,1
+M0129,2026-10-03,71,3,2,0,steady,None,,,,,0,Active,2.0,0,94.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0130,2026-10-03,24,8,8,0,steady,Active recurring,2026-09-24,75.0,9.0,,12,Active,26.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,recurring_gift_anniversary_12m,1
+M0131,2026-10-03,42,5,5,1,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,2
+M0132,2026-10-03,33,3,3,0,steady,Periodic,2026-08-09,85.0,55.0,55.0,3,None,,1,8.0,Yes,0,,2026-08-03,60.0,0,Yes,Yes,Yes,No,,1
+M0133,2026-10-03,6,4,1,0,up,Active recurring,2026-09-21,100.0,12.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0134,2026-10-03,36,4,5,1,steady,Periodic,2026-06-02,100.0,123.0,123.0,1,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0135,2026-10-03,0,1,0,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0136,2026-10-03,72,2,3,2,steady,None,,,,,0,Active,27.0,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0137,2026-10-03,19,4,4,2,steady,None,,,,,0,None,,1,4.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0138,2026-10-03,60,5,8,3,down,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,Yes,No,,1
+M0139,2026-10-03,12,5,6,0,steady,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,No,No,spiritual_milestone,1
+M0140,2026-10-03,36,7,8,0,steady,Periodic,2026-08-23,75.0,41.0,41.0,3,None,,1,2.0,Yes,0,,2026-09-21,11.0,1,Yes,Yes,Yes,No,,1
+M0141,2026-10-03,74,3,4,2,steady,None,,,,,0,None,,0,,NA,0,,2026-04-12,173.0,0,Yes,Yes,Yes,No,,1
+M0142,2026-10-03,66,4,2,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,No,Yes,No,,0
+M0143,2026-10-03,36,8,6,0,up,Periodic,2026-09-02,80.0,31.0,31.0,4,None,,1,4.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0144,2026-10-03,27,4,5,1,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0145,2026-10-03,9,4,8,2,down,None,,,,,0,None,,0,,NA,0,,2026-03-21,195.0,0,Yes,Yes,Yes,No,,1
+M0146,2026-10-03,62,0,0,46,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0147,2026-10-03,48,3,8,5,down,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,Yes,No,,1
+M0148,2026-10-03,39,1,2,1,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0149,2026-10-03,94,3,3,2,steady,None,,,,,0,None,,1,8.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0150,2026-10-03,85,5,5,1,steady,Periodic,2026-08-18,130.0,46.0,46.0,5,None,,1,1.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0151,2026-10-03,18,3,2,0,steady,Periodic,2026-09-23,60.0,10.0,10.0,3,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0152,2026-10-03,0,0,0,99,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0153,2026-10-03,146,7,8,0,steady,Active recurring,2026-09-15,50.0,18.0,,12,Active,11.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_10y,1
+M0154,2026-10-03,82,7,7,0,steady,None,,,,,0,Active,2.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0155,2026-10-03,85,7,7,0,steady,Active recurring,2026-09-15,50.0,18.0,,12,Active,3.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,volunteer_anniversary_5y,1
+M0156,2026-10-03,114,4,7,0,down,Periodic,2026-06-26,50.0,99.0,99.0,1,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0157,2026-10-03,18,2,3,2,steady,None,,,,,0,Active,39.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0158,2026-10-03,51,6,5,0,steady,Periodic,2026-07-25,25.0,70.0,70.0,1,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0159,2026-10-03,55,0,0,24,none,None,,,,,0,Active,2.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,2
+M0160,2026-10-03,97,8,8,0,steady,Active recurring,2026-09-13,50.0,20.0,,12,None,,0,,NA,0,,,,0,No,Yes,Yes,No,,1
+M0161,2026-10-03,35,0,0,19,none,None,,,,,0,None,,0,94.0,Yes,0,,,,0,Yes,No,No,No,,1
+M0162,2026-10-03,81,5,7,0,down,None,,,,,0,None,,0,,NA,0,,,,0,Yes,No,Yes,No,,0
+M0163,2026-10-03,33,2,4,4,down,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0164,2026-10-03,73,4,6,1,down,None,,,,,0,None,,1,4.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0165,2026-10-03,68,7,5,0,up,None,,,,,0,None,,0,,NA,0,,2026-06-11,113.0,0,Yes,Yes,No,No,,1
+M0166,2026-10-03,59,7,4,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0167,2026-10-03,81,3,4,0,steady,None,,,,,0,None,,0,81.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0168,2026-10-03,13,8,6,0,up,Active recurring,2026-09-17,30.0,16.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0169,2026-10-03,31,6,2,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0170,2026-10-03,47,4,4,0,steady,Periodic,2026-07-04,80.0,91.0,91.0,3,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0171,2026-10-03,99,3,3,1,steady,Active recurring,2026-09-30,75.0,3.0,,7,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0172,2026-10-03,82,1,1,3,steady,None,,,,,0,None,,0,,NA,0,,2026-04-25,160.0,0,Yes,Yes,No,No,,1
+M0173,2026-10-03,39,0,2,8,down,Periodic,2026-06-20,80.0,105.0,105.0,3,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0174,2026-10-03,85,3,8,3,down,Paused recurring,2026-08-19,150.0,45.0,,11,Inactive,74.0,1,10.0,Yes,0,,,,0,Yes,Yes,Yes,No,,2
+M0175,2026-10-03,60,7,6,0,steady,Active recurring,2026-09-24,75.0,9.0,,12,Active,27.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,recurring_gift_anniversary_24m,1
+M0176,2026-10-03,26,2,4,1,down,Periodic,2026-01-10,25.0,266.0,266.0,1,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0177,2026-10-03,36,6,6,0,steady,Periodic,2026-08-02,65.0,62.0,62.0,3,None,,1,1.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0178,2026-10-03,24,8,7,0,steady,Periodic,2026-08-30,65.0,34.0,34.0,3,None,,1,3.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0179,2026-10-03,4,6,5,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0180,2026-10-03,20,5,2,0,up,None,,,,,0,Active,1.0,1,17.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0181,2026-10-03,114,5,4,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0182,2026-10-03,47,4,4,0,steady,None,,,,,0,None,,0,,NA,0,,2026-06-20,104.0,0,Yes,Yes,Yes,No,,1
+M0183,2026-10-03,24,4,6,3,down,Periodic,2026-08-31,70.0,33.0,33.0,4,None,,1,10.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0184,2026-10-03,114,4,2,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0185,2026-10-03,49,7,6,0,steady,None,,,,,0,None,,0,102.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0186,2026-10-03,31,6,6,1,steady,Periodic,2026-08-19,50.0,45.0,45.0,4,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0187,2026-10-03,35,5,6,0,steady,Periodic,2026-07-03,100.0,92.0,92.0,1,None,,1,29.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0188,2026-10-03,85,6,7,0,steady,Active recurring,2026-09-15,100.0,18.0,,12,Active,4.0,0,,NA,0,,2026-06-14,110.0,0,Yes,Yes,Yes,No,,1
+M0189,2026-10-03,48,7,8,0,steady,Active recurring,2026-09-23,50.0,10.0,,12,None,,0,,NA,0,,2026-09-25,7.0,1,Yes,Yes,Yes,No,,1
+M0190,2026-10-03,133,8,6,0,up,Active recurring,2026-09-20,500.0,13.0,,12,Active,16.0,1,4.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0191,2026-10-03,52,6,4,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0192,2026-10-03,0,1,0,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0193,2026-10-03,47,5,6,0,steady,Periodic,2026-09-19,75.0,14.0,14.0,2,Active,22.0,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0194,2026-10-03,82,5,3,1,up,None,,,,,0,None,,0,70.0,Yes,0,,,,0,Yes,Yes,No,No,,2
+M0195,2026-10-03,26,4,3,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0196,2026-10-03,72,6,7,0,steady,Periodic,2026-08-28,75.0,36.0,36.0,2,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0197,2026-10-03,95,8,6,0,up,None,,,,,0,None,,0,91.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0198,2026-10-03,97,7,8,0,steady,Periodic,2026-08-31,85.0,33.0,33.0,3,None,,1,5.0,Yes,0,,,,0,Yes,Yes,No,No,,1
+M0199,2026-10-03,0,0,0,99,none,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0200,2026-10-03,50,6,3,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0201,2026-10-03,105,6,4,0,up,Periodic,2026-07-30,50.0,65.0,65.0,1,Active,3.0,0,,NA,0,,2026-05-16,139.0,0,Yes,Yes,No,No,,1
+M0202,2026-10-03,24,3,3,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0203,2026-10-03,2,8,1,0,up,Active recurring,2026-09-26,50.0,7.0,,5,Active,31.0,0,,NA,0,,2026-07-01,93.0,0,Yes,Yes,No,No,,1
+M0204,2026-10-03,60,4,8,4,down,None,,,,,0,None,,0,,NA,1,16.0,,,0,Yes,Yes,Yes,No,,1
+M0205,2026-10-03,52,4,3,0,steady,None,,,,,0,Active,12.0,0,,NA,0,,,,0,Yes,Yes,No,No,,2
+M0206,2026-10-03,85,7,5,0,up,Periodic,2026-09-03,50.0,30.0,30.0,4,None,,0,,NA,1,,,,0,Yes,Yes,Yes,No,impact_update,1
+M0207,2026-10-03,27,3,7,1,down,Active recurring,2026-09-23,100.0,10.0,,12,None,,0,,NA,0,,,,0,Yes,No,No,No,,0
+M0208,2026-10-03,85,4,8,3,down,Paused recurring,2026-08-13,100.0,51.0,,11,Inactive,62.0,1,4.0,Yes,0,,,,0,Yes,Yes,Yes,No,,2
+M0209,2026-10-03,86,5,1,1,up,None,,,,,0,None,,0,,NA,0,,2026-08-20,43.0,0,Yes,Yes,Yes,No,,1
+M0210,2026-10-03,93,6,4,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,2
+M0211,2026-10-03,74,3,2,0,steady,None,,,,,0,Active,8.0,0,118.0,Yes,0,,2026-05-01,154.0,0,Yes,Yes,No,No,,2
+M0212,2026-10-03,40,0,1,12,steady,None,,,,,0,None,,0,,NA,0,,2026-08-14,49.0,0,Yes,Yes,Yes,No,,1
+M0213,2026-10-03,85,5,4,0,steady,Periodic,2026-08-27,25.0,37.0,37.0,4,None,,0,,NA,1,,,,0,Yes,Yes,No,No,impact_update,1
+M0214,2026-10-03,101,6,7,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,2
+M0215,2026-10-03,97,2,7,5,sharp_down,Paused recurring,2026-08-19,100.0,45.0,,11,Inactive,49.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0216,2026-10-03,60,6,7,0,steady,Active recurring,2026-09-22,150.0,11.0,,12,Active,8.0,0,,NA,0,,2026-05-28,127.0,0,Yes,Yes,No,No,,1
+M0217,2026-10-03,60,8,8,0,steady,Active recurring,2026-09-09,100.0,24.0,,12,None,,0,,NA,0,,2026-09-12,20.0,1,Yes,Yes,Yes,No,,1
+M0218,2026-10-03,85,8,6,0,up,Active recurring,2026-09-28,50.0,5.0,,12,Active,9.0,0,145.0,Yes,0,104.0,,,0,Yes,Yes,No,No,,1
+M0219,2026-10-03,67,8,7,0,steady,None,,,,,0,None,,1,41.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0220,2026-10-03,17,7,8,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0221,2026-10-03,12,7,7,0,steady,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,Yes,No,spiritual_milestone,1
+M0222,2026-10-03,3,2,1,4,steady,Active recurring,2026-09-15,50.0,18.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0223,2026-10-03,99,0,0,39,none,Active recurring,2026-09-25,20.0,8.0,,12,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0224,2026-10-03,103,4,2,1,up,None,,,,,0,Active,27.0,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0225,2026-10-03,12,6,6,1,steady,Periodic,2026-09-30,25.0,3.0,3.0,1,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,first_gift,1
+M0226,2026-10-03,73,7,6,0,steady,Periodic,2026-07-30,55.0,65.0,65.0,3,None,,1,2.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0227,2026-10-03,9,7,8,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0228,2026-10-03,24,7,7,0,steady,Periodic,2026-09-30,50.0,3.0,3.0,1,None,,0,,NA,0,,,,0,Yes,Yes,No,No,first_gift,1
+M0229,2026-10-03,60,6,7,0,steady,Active recurring,2026-09-12,100.0,21.0,,12,None,,0,,NA,0,,2026-09-22,10.0,1,Yes,Yes,No,No,,1
+M0230,2026-10-03,26,7,5,0,up,Periodic,2026-08-23,35.0,41.0,41.0,4,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0231,2026-10-03,96,5,6,0,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,2
+M0232,2026-10-03,50,5,4,1,steady,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,No,No,,1
+M0233,2026-10-03,98,1,0,6,steady,None,,,,,0,Active,9.0,0,,NA,0,,2026-04-17,168.0,0,Yes,Yes,No,No,,1
+M0234,2026-10-03,97,5,7,3,down,Periodic,2026-08-30,110.0,34.0,34.0,4,None,,1,7.0,Yes,0,,,,0,Yes,Yes,Yes,No,,1
+M0235,2026-10-03,48,2,8,6,sharp_down,Paused recurring,2026-08-09,150.0,55.0,,11,Inactive,60.0,1,15.0,Yes,0,,,,0,Yes,Yes,No,No,,2
+M0236,2026-10-03,29,8,6,0,up,None,,,,,0,None,,0,,NA,0,,,,0,Yes,Yes,Yes,No,,1
+M0237,2026-10-03,14,6,4,0,up,None,,,,,0,None,,0,,NA,0,,2026-05-29,126.0,0,Yes,Yes,No,No,,1
+M0238,2026-10-03,48,6,6,2,steady,None,,,,,0,None,,0,,NA,1,11.0,,,0,Yes,Yes,Yes,No,,1
+M0239,2026-10-03,51,4,4,2,steady,Periodic,2026-04-02,25.0,184.0,184.0,1,None,,0,,NA,0,,2026-08-19,44.0,0,Yes,Yes,No,No,,1
+M0240,2026-10-03,36,8,6,0,up,None,,,,,0,None,,0,,NA,1,,,,0,Yes,Yes,No,No,spiritual_milestone,1

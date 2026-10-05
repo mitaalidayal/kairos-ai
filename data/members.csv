@@ -1,0 +1,241 @@
+member_id,first_name,last_name,age,gender,household_id,membership_status,member_since,preferred_channel,email_opt_in,sms_opt_in,appeals_opt_in,small_group_id
+M0001,Layla,Jordan,59,Female,HH0002,Member,2018-10-05,text,Yes,Yes,Yes,G3
+M0002,Maya,Delgado,53,Female,HH0003,Member,2022-10-04,email,Yes,No,Yes,G1
+M0003,Seth,Castillo,54,Male,HH0004,Member,2017-10-05,email,Yes,Yes,Yes,G4
+M0004,Joy,Sims,30,Female,HH0005,Member,2021-10-04,email,Yes,Yes,Yes,G1
+M0005,Caleb,Lopez,54,Male,HH0006,Member,2025-02-27,email,Yes,Yes,Yes,
+M0006,Malik,Irwin,55,Male,HH0007,Member,2021-10-04,email,Yes,Yes,Yes,G3
+M0007,Joshua,Bishop,49,Male,HH0008,Member,2017-07-20,text,Yes,No,Yes,
+M0008,Ruth,Morales,45,Female,HH0009,Member,2018-10-05,text,Yes,Yes,Yes,G3
+M0009,Leah,Jordan,40,Female,HH0010,Inactive,2025-08-31,email,Yes,Yes,Yes,G3
+M0010,Marcus,Parker,39,Male,HH0011,Member,2020-10-04,email,Yes,No,Yes,G5
+M0011,Micah,Sims,42,Male,HH0012,Member,2019-06-27,text,Yes,No,Yes,G5
+M0012,Ethan,Shaw,39,Male,HH0013,Member,2023-10-04,text,Yes,Yes,Yes,G3
+M0013,Imani,Reyes,27,Female,HH0014,Regular attender,2018-12-03,email,Yes,Yes,Yes,
+M0014,Naomi,Knox,70,Female,HH0015,Member,2021-12-19,text,Yes,No,Yes,G5
+M0015,Daniela,Alvarez,19,Female,HH0016,Member,2023-12-14,email,Yes,Yes,Yes,
+M0016,Imani,Cruz,60,Female,HH0017,Member,2019-05-03,email,Yes,Yes,Yes,
+M0017,Wes,Delgado,42,Male,HH0018,Member,2021-10-19,text,Yes,No,Yes,G3
+M0018,Jasmine,Bishop,58,Female,HH0019,Member,2024-10-03,email,Yes,Yes,Yes,G5
+M0019,Naomi,Walker,42,Female,HH0020,Member,2024-02-08,email,Yes,Yes,Yes,
+M0020,Victor,Cruz,42,Male,HH0021,Visitor,2026-09-03,email,Yes,Yes,Yes,
+M0021,Seth,Brooks,19,Male,HH0022,Member,2024-12-08,text,Yes,Yes,Yes,G1
+M0022,Alejandro,Williams,66,Male,HH0023,Member,2020-05-05,text,Yes,No,Yes,
+M0023,Miriam,Edwards,64,Female,HH0024,Member,2023-10-04,email,Yes,Yes,Yes,G3
+M0024,Isabella,Williams,75,Female,HH0025,Member,2026-01-27,email,Yes,No,Yes,
+M0025,Javier,Harper,23,Male,HH0026,Member,2018-03-23,text,Yes,Yes,Yes,
+M0026,Brianna,Flores,66,Female,HH0027,Member,2022-10-04,text,Yes,No,Yes,G2
+M0027,Isaiah,Flores,60,Male,HH0028,Member,2020-10-04,text,Yes,Yes,Yes,G4
+M0028,Olivia,Keller,24,Female,HH0029,Inactive,2024-06-08,email,Yes,No,Yes,G4
+M0029,Rosa,Garcia,24,Female,HH0030,Inactive,2025-11-18,text,No,Yes,Yes,G1
+M0030,Alejandro,Dixon,33,Male,HH0031,Member,2023-10-04,email,Yes,No,Yes,G5
+M0031,Samuel,Garcia,63,Male,HH0032,Member,2016-10-05,email,Yes,No,Yes,G1
+M0032,Rachel,Williams,52,Female,HH0033,Regular attender,2018-08-09,email,Yes,Yes,Yes,
+M0033,Sarah,Rivera,57,Female,HH0034,Member,2019-10-05,email,Yes,No,Yes,G3
+M0034,Victor,Guerrero,41,Male,HH0035,Member,2019-01-10,email,Yes,No,Yes,G1
+M0035,Caleb,Patel,35,Male,HH0036,Member,2023-01-14,email,Yes,Yes,Yes,
+M0036,Javier,Young,23,Male,HH0037,Member,2025-01-25,email,Yes,No,Yes,
+M0037,Naomi,Edwards,59,Female,HH0038,Member,2017-10-05,email,Yes,Yes,Yes,G5
+M0038,Marcus,Lopez,26,Male,HH0039,Member,2025-07-30,text,Yes,Yes,Yes,G1
+M0039,Marcus,Martinez,50,Male,HH0040,Member,2022-10-04,text,Yes,Yes,Yes,G3
+M0040,Evan,Knox,14,Male,HH0041,Member,2025-10-03,text,Yes,No,Yes,G2
+M0041,Santiago,Guerrero,71,Male,HH0042,Inactive,2025-02-22,text,Yes,No,Yes,
+M0042,Noah,Nash,39,Male,HH0043,Member,2021-08-10,email,Yes,Yes,Yes,
+M0043,Alejandro,Martinez,25,Male,HH0044,Member,2026-06-19,text,Yes,No,Yes,G4
+M0044,Tess,Morales,44,Female,HH0045,Member,2019-10-05,email,Yes,Yes,Yes,G4
+M0045,Mateo,Nguyen,65,Male,HH0046,Member,2017-10-04,email,Yes,Yes,Yes,G2
+M0046,Javier,Sanchez,70,Male,HH0047,Regular attender,2018-01-09,email,No,Yes,Yes,
+M0047,Rosa,Vargas,37,Female,HH0048,Inactive,2022-04-06,email,Yes,Yes,Yes,G1
+M0048,Daniela,Rivera,52,Female,HH0049,Member,2021-06-20,email,Yes,No,Yes,
+M0049,Leah,Hughes,44,Female,HH0050,Member,2024-10-03,email,Yes,No,Yes,G5
+M0050,Rosa,Torres,19,Female,HH0051,Member,2026-02-14,email,Yes,Yes,Yes,G2
+M0051,Paul,Hughes,26,Male,HH0052,Member,2017-06-18,email,Yes,Yes,Yes,
+M0052,Adrian,Vance,51,Male,HH0053,Inactive,2026-04-03,email,Yes,Yes,Yes,G5
+M0053,Samuel,Morales,73,Male,HH0054,Member,2018-04-08,text,Yes,No,Yes,G1
+M0054,Maya,Cruz,63,Female,HH0055,Inactive,2018-02-27,email,Yes,No,Yes,
+M0055,Ruth,Espinoza,57,Female,HH0056,Regular attender,2024-06-30,text,Yes,No,Yes,G2
+M0056,Tamara,Patel,57,Female,HH0057,Member,2019-10-05,text,Yes,Yes,Yes,G4
+M0057,Daniela,Hughes,29,Female,HH0058,Member,2024-10-03,email,Yes,No,Yes,G4
+M0058,Sofia,Patel,54,Female,HH0059,Member,2017-10-24,email,Yes,No,Yes,
+M0059,Ana,Coleman,40,Female,HH0060,Member,2018-07-17,email,Yes,Yes,Yes,G2
+M0060,Ruth,Sims,49,Female,HH0061,Member,2022-01-31,email,Yes,Yes,Yes,
+M0061,Hannah,Dixon,44,Female,HH0062,Member,2025-03-09,text,Yes,Yes,Yes,G2
+M0062,Elijah,Williams,77,Male,HH0063,Member,2018-07-28,text,Yes,Yes,Yes,
+M0063,Adrian,Ellis,50,Male,HH0064,Member,2014-10-06,email,Yes,Yes,Yes,G5
+M0064,Ruth,Carter,37,Female,HH0065,Member,2019-12-23,email,Yes,No,Yes,G5
+M0065,Micah,Walker,33,Male,HH0066,Regular attender,2020-11-05,email,Yes,Yes,Yes,G2
+M0066,Julian,Tate,38,Male,HH0067,Inactive,2020-05-17,text,Yes,Yes,Yes,
+M0067,Dana,Espinoza,53,Female,HH0068,Member,2022-10-04,text,Yes,No,Yes,G3
+M0068,Ray,Scott,49,Male,HH0069,Inactive,2020-08-01,text,Yes,Yes,Yes,G2
+M0069,Isabella,Robinson,58,Female,HH0070,Member,2017-10-05,text,Yes,Yes,Yes,G2
+M0070,Tess,Garcia,50,Female,HH0071,Member,2020-10-04,email,Yes,No,Yes,G4
+M0071,Daniela,Ramirez,32,Female,HH0072,Member,2017-10-05,text,Yes,No,Yes,G4
+M0072,Tamara,Quinn,53,Female,HH0073,Regular attender,2026-02-09,text,Yes,Yes,Yes,G5
+M0073,Nina,Mendoza,31,Female,HH0074,Member,2022-10-04,email,Yes,No,Yes,G1
+M0074,Aaron,Espinoza,30,Male,HH0075,Member,2018-10-05,text,Yes,Yes,Yes,G2
+M0075,Isabella,Castillo,48,Female,HH0076,Member,2019-11-27,text,No,No,Yes,G4
+M0076,Omar,Ortiz,42,Male,HH0077,Member,2021-10-04,email,Yes,Yes,Yes,G5
+M0077,Maya,Lane,44,Female,HH0078,Member,2022-10-04,email,Yes,No,Yes,G3
+M0078,Naomi,Keller,13,Female,HH0079,Member,2023-10-04,email,Yes,Yes,Yes,G2
+M0079,Evan,Hamilton,28,Male,HH0080,Member,2020-10-10,email,Yes,No,Yes,G3
+M0080,Nina,Coleman,49,Female,HH0081,Member,2017-10-05,email,Yes,No,Yes,G4
+M0081,Isabella,Mendoza,31,Female,HH0082,Regular attender,2017-10-27,text,Yes,No,Yes,G2
+M0082,Antonio,Foster,57,Male,HH0083,Regular attender,2025-09-15,email,Yes,Yes,Yes,
+M0083,Rosa,Quinn,59,Female,HH0084,Member,2019-10-05,text,Yes,Yes,Yes,G5
+M0084,Naomi,Patel,41,Female,HH0085,Member,2021-10-04,email,Yes,Yes,Yes,G5
+M0085,Caleb,Irwin,57,Male,HH0086,Member,2025-08-28,text,Yes,No,Yes,G3
+M0086,Mateo,Washington,32,Male,HH0087,Member,2022-10-04,email,Yes,Yes,Yes,G5
+M0087,Ana,Ortiz,34,Female,HH0088,Regular attender,2025-07-02,text,Yes,Yes,Yes,G4
+M0088,Gabriela,Bishop,42,Female,HH0089,Member,2021-09-17,email,Yes,Yes,Yes,
+M0089,Noah,Foster,19,Male,HH0090,Regular attender,2026-04-02,email,Yes,Yes,Yes,
+M0090,Antonio,Fisher,47,Male,HH0091,Inactive,2025-06-11,email,Yes,Yes,Yes,
+M0091,Imani,Jackson,37,Female,HH0092,Member,2022-07-16,email,Yes,Yes,Yes,
+M0092,Elijah,Espinoza,46,Male,HH0093,Regular attender,2024-12-31,email,Yes,Yes,Yes,G5
+M0093,Carlos,Sanchez,37,Male,HH0094,Member,2018-10-05,email,Yes,Yes,Yes,G5
+M0094,Diego,Reyes,61,Male,HH0095,Member,2025-11-26,email,Yes,No,Yes,
+M0095,Daniela,Grant,50,Female,HH0096,Member,2021-10-04,email,Yes,No,Yes,G2
+M0096,Dana,Rivera,26,Female,HH0097,Inactive,2024-11-15,email,Yes,Yes,Yes,
+M0097,Isaiah,Bishop,48,Male,HH0098,Member,2020-10-04,email,Yes,Yes,Yes,G1
+M0098,Evan,Jordan,48,Male,HH0099,Member,2025-06-26,email,Yes,Yes,Yes,
+M0099,Gabriel,Zamora,64,Male,HH0100,Member,2021-10-04,email,Yes,No,Yes,G3
+M0100,Priya,Nash,35,Female,HH0101,Inactive,2020-02-03,email,Yes,Yes,Yes,
+M0101,Grace,Zamora,45,Female,HH0102,Member,2017-09-01,email,Yes,Yes,Yes,
+M0102,Paul,Torres,40,Male,HH0103,Regular attender,2019-10-20,text,Yes,Yes,Yes,G1
+M0103,Layla,Dixon,60,Female,HH0104,Member,2021-10-04,email,Yes,No,Yes,G4
+M0104,Miriam,Alvarez,39,Female,HH0105,Regular attender,2024-01-02,email,Yes,No,Yes,
+M0105,Paul,Cruz,63,Male,HH0106,Member,2019-10-05,text,Yes,Yes,Yes,G4
+M0106,Aaron,Johnson,43,Male,HH0107,Member,2024-10-03,email,Yes,Yes,Yes,G4
+M0107,Emma,Fisher,51,Female,HH0108,Regular attender,2017-07-10,text,No,No,Yes,
+M0108,Adriana,Scott,58,Female,HH0109,Inactive,2020-06-03,email,Yes,Yes,Yes,
+M0109,Emma,Brooks,45,Female,HH0110,Member,2016-10-05,text,Yes,Yes,Yes,G4
+M0110,Miriam,Tate,25,Female,HH0111,Visitor,2026-09-13,text,Yes,No,Yes,
+M0111,Amara,Shaw,39,Female,HH0112,Regular attender,2019-02-28,email,Yes,No,Yes,
+M0112,Gabriel,Washington,63,Male,HH0113,Member,2021-09-18,email,Yes,No,Yes,G5
+M0113,Hannah,Vargas,52,Female,HH0114,Member,2025-06-02,text,Yes,Yes,Yes,G5
+M0114,Jasmine,Espinoza,32,Female,HH0115,Member,2024-11-01,email,Yes,No,Yes,
+M0115,Kevin,Alvarez,22,Male,HH0116,Member,2025-09-28,text,Yes,Yes,Yes,G3
+M0116,Naomi,Williams,40,Female,HH0117,Member,2017-10-05,email,Yes,Yes,Yes,G5
+M0117,Malik,Jackson,57,Male,HH0118,Inactive,2023-05-11,text,Yes,Yes,Yes,
+M0118,Adrian,Jordan,50,Male,HH0119,Member,2019-10-05,text,Yes,No,No,G3
+M0119,Daniel,Walker,62,Male,HH0120,Member,2020-10-04,email,Yes,Yes,Yes,G2
+M0120,Adriana,Espinoza,39,Female,HH0121,Visitor,2026-09-27,text,Yes,Yes,Yes,
+M0121,Amara,Rivera,65,Female,HH0122,Member,2025-04-21,email,Yes,No,Yes,G4
+M0122,Isabella,Vance,31,Female,HH0123,Visitor,2026-09-03,text,Yes,Yes,Yes,
+M0123,Charlotte,Washington,34,Female,HH0124,Regular attender,2022-06-06,email,Yes,No,Yes,
+M0124,Javier,Castillo,60,Male,HH0125,Member,2017-10-05,text,Yes,No,Yes,G2
+M0125,Miguel,Keller,54,Male,HH0126,Regular attender,2024-11-06,email,Yes,No,Yes,
+M0126,Mariah,Espinoza,49,Female,HH0127,Member,2021-10-04,text,Yes,Yes,Yes,G3
+M0127,Diego,Hamilton,72,Male,HH0128,Regular attender,2024-08-20,email,No,Yes,Yes,
+M0128,Elijah,Hughes,50,Male,HH0129,Regular attender,2024-06-19,email,Yes,No,Yes,G5
+M0129,Seth,Irwin,19,Male,HH0130,Regular attender,2020-12-03,email,Yes,Yes,Yes,
+M0130,Joy,Rhodes,36,Female,HH0131,Member,2024-10-03,text,Yes,Yes,Yes,G5
+M0131,Ethan,Gonzalez,54,Male,HH0132,Member,2023-04-07,text,Yes,No,Yes,
+M0132,Jasmine,Ortiz,28,Female,HH0133,Regular attender,2023-12-19,email,Yes,Yes,Yes,G5
+M0133,Charlotte,Carter,57,Female,HH0134,Regular attender,2026-04-04,email,Yes,Yes,Yes,G1
+M0134,Jasmine,Reyes,28,Female,HH0135,Regular attender,2023-10-11,email,Yes,Yes,Yes,
+M0135,Ray,Rivera,25,Male,HH0136,Visitor,2026-09-22,email,Yes,Yes,Yes,
+M0136,Santiago,Irwin,55,Male,HH0137,Regular attender,2020-10-19,email,Yes,No,Yes,
+M0137,Imani,Knox,41,Female,HH0138,Member,2025-02-21,text,Yes,No,Yes,
+M0138,Theo,Reyes,45,Male,HH0139,Member,2021-10-04,email,Yes,Yes,Yes,G4
+M0139,Joshua,Underwood,46,Male,HH0140,Member,2025-10-03,email,Yes,No,Yes,G3
+M0140,Isaiah,Jackson,62,Male,HH0141,Member,2023-10-04,email,Yes,Yes,Yes,G3
+M0141,Noah,Sanchez,19,Male,HH0142,Member,2020-09-03,email,Yes,Yes,Yes,
+M0142,Caleb,Rhodes,43,Male,HH0143,Member,2021-04-30,email,No,Yes,Yes,
+M0143,Carlos,Guerrero,34,Male,HH0144,Member,2023-10-04,email,Yes,Yes,Yes,G2
+M0144,Paul,Nash,55,Male,HH0145,Member,2024-07-02,email,Yes,No,Yes,
+M0145,Alejandro,Castillo,37,Male,HH0146,Member,2025-12-18,text,Yes,Yes,Yes,G4
+M0146,Hannah,Rhodes,24,Female,HH0147,Inactive,2021-08-18,email,Yes,Yes,Yes,
+M0147,Mariah,Foster,30,Female,HH0148,Member,2022-10-04,email,Yes,Yes,Yes,G1
+M0148,Priya,Washington,40,Female,HH0149,Member,2023-07-02,text,Yes,No,Yes,
+M0149,Isaiah,Gray,40,Male,HH0150,Member,2018-12-27,email,Yes,Yes,Yes,
+M0150,Nina,Guerrero,48,Female,HH0151,Member,2019-10-05,text,Yes,Yes,Yes,G3
+M0151,Rafael,Edwards,25,Male,HH0152,Member,2025-03-18,text,Yes,Yes,Yes,
+M0152,Olivia,Morales,34,Female,HH0153,Visitor,2026-09-19,email,Yes,No,Yes,
+M0153,Rafael,Moss,39,Male,HH0154,Member,2014-10-06,text,Yes,Yes,Yes,G2
+M0154,David,Coleman,28,Male,HH0155,Member,2019-12-24,email,Yes,Yes,Yes,
+M0155,Marcus,Torres,54,Male,HH0156,Member,2019-10-05,email,Yes,Yes,Yes,G1
+M0156,Charlotte,Bishop,54,Female,HH0157,Member,2017-04-28,email,Yes,Yes,Yes,G5
+M0157,Elena,Wells,45,Female,HH0158,Regular attender,2025-04-10,email,Yes,Yes,Yes,
+M0158,Aaliyah,Castillo,55,Female,HH0159,Member,2022-07-16,email,Yes,No,Yes,
+M0159,Antonio,Underwood,74,Male,HH0160,Inactive,2022-03-28,email,Yes,Yes,Yes,
+M0160,Javier,Zamora,52,Male,HH0161,Member,2018-10-05,email,Yes,Yes,No,G2
+M0161,Valeria,Fisher,56,Female,HH0162,Inactive,2023-11-18,email,No,No,Yes,G4
+M0162,Miguel,Shaw,72,Male,HH0163,Member,2020-02-02,email,No,Yes,Yes,
+M0163,Dana,Washington,52,Female,HH0164,Member,2023-12-25,email,Yes,Yes,Yes,
+M0164,Tamara,Ortiz,37,Female,HH0165,Member,2020-10-04,email,Yes,Yes,Yes,G4
+M0165,Rosa,Pierce,51,Female,HH0166,Member,2021-02-12,text,Yes,No,Yes,G1
+M0166,Miguel,Harper,60,Male,HH0167,Member,2021-11-11,email,Yes,No,Yes,
+M0167,Ethan,Cruz,56,Male,HH0168,Member,2020-01-16,email,Yes,No,Yes,G2
+M0168,Nathan,Walker,64,Male,HH0169,Member,2025-09-04,email,Yes,Yes,Yes,G1
+M0169,Antonio,Salazar,43,Male,HH0170,Member,2024-03-06,text,Yes,Yes,Yes,
+M0170,Diego,Quinn,61,Male,HH0171,Regular attender,2022-11-04,email,Yes,No,Yes,
+M0171,Elena,Garcia,37,Female,HH0172,Regular attender,2018-08-09,email,Yes,No,Yes,
+M0172,Jasmine,Edwards,38,Female,HH0173,Inactive,2019-12-31,email,Yes,No,Yes,G1
+M0173,Daniel,Martinez,19,Male,HH0174,Inactive,2023-07-13,email,Yes,Yes,Yes,G5
+M0174,Carmen,Castillo,32,Female,HH0175,Member,2019-10-05,email,Yes,Yes,Yes,G3
+M0175,Ruth,Vargas,66,Female,HH0176,Member,2021-10-04,text,Yes,Yes,Yes,G1
+M0176,Amara,Wells,47,Female,HH0177,Member,2024-07-31,email,Yes,No,Yes,G1
+M0177,Brianna,Parker,48,Female,HH0178,Member,2023-10-04,email,Yes,Yes,Yes,G5
+M0178,Javier,Coleman,64,Male,HH0179,Member,2024-10-03,email,Yes,Yes,Yes,G5
+M0179,Ethan,Carter,77,Male,HH0180,Member,2026-05-21,email,Yes,Yes,Yes,
+M0180,Santiago,Johnson,54,Male,HH0181,Member,2025-01-28,text,Yes,Yes,Yes,
+M0181,Daniela,Espinoza,45,Female,HH0182,Regular attender,2017-05-17,email,Yes,Yes,Yes,G3
+M0182,Hannah,Martinez,62,Female,HH0183,Regular attender,2022-10-29,text,Yes,Yes,Yes,G4
+M0183,Seth,Garcia,37,Male,HH0184,Member,2024-10-03,email,Yes,Yes,Yes,G5
+M0184,Aaliyah,Jimenez,56,Female,HH0185,Regular attender,2017-04-28,email,Yes,Yes,Yes,G1
+M0185,Elena,Hamilton,68,Female,HH0186,Member,2022-08-31,email,Yes,No,Yes,
+M0186,Malik,Sanchez,54,Male,HH0187,Member,2024-03-02,text,Yes,Yes,Yes,G3
+M0187,Valeria,Walker,52,Female,HH0188,Member,2023-10-30,email,Yes,Yes,Yes,G1
+M0188,Layla,Tate,36,Female,HH0189,Member,2019-10-05,email,Yes,Yes,Yes,G4
+M0189,Diego,Walker,31,Male,HH0190,Member,2022-10-04,text,Yes,Yes,Yes,G2
+M0190,Antonio,Rhodes,67,Male,HH0191,Member,2015-10-06,email,Yes,Yes,Yes,G4
+M0191,Ana,Scott,70,Female,HH0192,Member,2022-06-07,email,Yes,No,Yes,G3
+M0192,Aaliyah,Young,55,Female,HH0193,Visitor,2026-09-21,text,Yes,No,Yes,
+M0193,Rachel,Gonzalez,40,Female,HH0194,Member,2022-11-05,email,Yes,No,Yes,
+M0194,Ethan,Nash,40,Male,HH0195,Regular attender,2019-12-10,email,Yes,No,Yes,G1
+M0195,Ethan,Keller,50,Male,HH0196,Regular attender,2024-08-08,text,Yes,Yes,Yes,G4
+M0196,Aaron,Jackson,33,Male,HH0197,Member,2020-10-11,text,Yes,Yes,Yes,G5
+M0197,Owen,Ortiz,33,Male,HH0198,Member,2018-11-29,email,Yes,Yes,Yes,
+M0198,Naomi,Grant,49,Female,HH0199,Member,2018-10-05,text,Yes,No,Yes,G4
+M0199,Elijah,Cruz,41,Male,HH0200,Visitor,2026-09-28,email,Yes,Yes,Yes,
+M0200,Abigail,Ramirez,69,Female,HH0201,Member,2022-08-19,email,Yes,Yes,Yes,G4
+M0201,Sofia,Pierce,50,Female,HH0202,Member,2018-02-05,text,Yes,No,Yes,G4
+M0202,Caleb,Torres,50,Male,HH0203,Regular attender,2024-10-04,text,Yes,Yes,Yes,
+M0203,Carlos,Young,31,Male,HH0204,Member,2026-07-20,text,Yes,No,Yes,
+M0204,Dana,Shaw,58,Female,HH0205,Member,2021-10-04,text,Yes,Yes,Yes,G5
+M0205,Rosa,Carter,19,Female,HH0206,Member,2022-06-02,text,Yes,No,Yes,
+M0206,Brianna,Tate,31,Female,HH0207,Member,2019-10-05,text,Yes,Yes,Yes,G1
+M0207,Isaiah,Castillo,29,Male,HH0208,Member,2024-07-10,email,No,No,Yes,
+M0208,Joshua,Young,53,Male,HH0209,Member,2019-10-05,text,Yes,Yes,Yes,G3
+M0209,Santiago,Pierce,45,Male,HH0210,Regular attender,2019-08-22,email,Yes,Yes,Yes,G2
+M0210,Emma,Gray,66,Female,HH0211,Regular attender,2019-01-19,email,Yes,No,Yes,
+M0211,Kevin,Carter,33,Male,HH0212,Member,2020-08-29,email,Yes,No,Yes,
+M0212,Jasmine,Brooks,28,Female,HH0213,Inactive,2023-05-29,email,Yes,Yes,Yes,
+M0213,Gabriela,Sims,48,Female,HH0214,Member,2019-10-05,text,Yes,No,Yes,G4
+M0214,Ana,Zamora,44,Female,HH0215,Member,2018-05-27,text,Yes,No,Yes,
+M0215,Layla,Espinoza,68,Female,HH0216,Member,2018-10-05,email,Yes,Yes,Yes,G3
+M0216,Leah,Alvarez,33,Female,HH0217,Member,2021-10-04,email,Yes,No,Yes,G4
+M0217,Santiago,Chavez,58,Male,HH0218,Member,2021-10-04,text,Yes,Yes,Yes,G4
+M0218,Amara,Rhodes,50,Female,HH0219,Member,2019-10-05,email,Yes,No,Yes,G5
+M0219,Luis,Patel,60,Male,HH0220,Member,2021-03-10,email,Yes,Yes,Yes,G2
+M0220,Evan,Hernandez,54,Male,HH0221,Regular attender,2025-04-14,email,Yes,Yes,Yes,G5
+M0221,Isabella,Martinez,42,Female,HH0222,Member,2025-10-03,email,Yes,Yes,Yes,G1
+M0222,Julian,Young,47,Male,HH0223,Regular attender,2026-06-18,email,Yes,No,Yes,G5
+M0223,Javier,Shaw,61,Male,HH0224,Inactive,2018-07-21,email,Yes,No,Yes,
+M0224,Tess,Dixon,33,Female,HH0225,Regular attender,2018-04-17,email,Yes,Yes,Yes,
+M0225,Evan,Torres,52,Male,HH0226,Regular attender,2025-10-03,text,Yes,Yes,Yes,G1
+M0226,Ray,Gonzalez,38,Male,HH0227,Member,2020-10-04,email,Yes,Yes,Yes,G5
+M0227,Darius,Lane,43,Male,HH0228,Member,2025-12-27,email,Yes,Yes,Yes,
+M0228,Dana,Tate,26,Female,HH0229,Regular attender,2024-10-03,text,Yes,No,Yes,G5
+M0229,Javier,Moss,68,Male,HH0230,Member,2021-10-04,text,Yes,No,Yes,G5
+M0230,Mariah,Gonzalez,56,Female,HH0231,Member,2024-07-30,text,Yes,Yes,Yes,G3
+M0231,Naomi,Castillo,31,Female,HH0232,Member,2018-11-04,email,Yes,Yes,Yes,G4
+M0232,Abigail,Hamilton,34,Female,HH0233,Member,2022-08-21,email,Yes,No,Yes,G4
+M0233,Miriam,Garcia,65,Female,HH0234,Inactive,2018-08-21,text,Yes,No,Yes,G5
+M0234,Elijah,Garcia,53,Male,HH0235,Member,2018-10-05,email,Yes,Yes,Yes,G5
+M0235,Miguel,Washington,33,Male,HH0236,Member,2022-10-04,text,Yes,No,Yes,G4
+M0236,Aaliyah,Shaw,39,Female,HH0237,Regular attender,2024-05-07,email,Yes,Yes,Yes,G5
+M0237,Mariah,Nguyen,61,Female,HH0238,Member,2025-08-02,email,Yes,No,Yes,G5
+M0238,Caleb,Vargas,47,Male,HH0239,Member,2022-10-04,text,Yes,Yes,Yes,G5
+M0239,Imani,Keller,64,Female,HH0240,Member,2022-07-20,email,Yes,No,Yes,
+M0240,Jasmine,Jackson,49,Female,HH0241,Member,2023-10-04,email,Yes,No,Yes,G3
