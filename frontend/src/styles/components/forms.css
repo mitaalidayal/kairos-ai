@@ -40,3 +40,9 @@
 .kai-handover__opt input { position: absolute; left: 16px; top: 18px; width: 20px; height: 20px; margin: 0; accent-color: var(--primary); }
 .kai-handover__opt label { display: grid; gap: var(--space-2); padding: var(--space-3) var(--space-4) var(--space-3) 48px; border: 1.5px solid var(--rule-strong); border-radius: var(--radius-md); cursor: pointer; }
 .kai-handover__opt input:checked + label { border-color: var(--ink); background: var(--paper-sunk); }
+/* LogContactForm: note, then channel + both log buttons on one row (wraps on a phone) */
+.kai-logform { gap: var(--space-3); }
+.kai-logform__row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.kai-select--sm { min-width: 0; width: auto; }
+.kai-logform__error { margin: 0; font-size: 14px; line-height: 20px; color: var(--wait); }
+@media (max-width: 600px) { .kai-logform__row .kai-btn, .kai-logform__row .kai-select { flex: 1 1 100%; justify-content: center; } }

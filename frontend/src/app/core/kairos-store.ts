@@ -114,8 +114,11 @@ export class KairosStore {
   // ── human actions. Each resolves on success and rejects with ApiError so forms can show it. ──
 
   async logContact(item: QueueItem, body: { note: string; channel: string; close: boolean }): Promise<void> {
-    const r = await firstValueFrom(this.api.logContact(item.item_id, this.actorFor(item), body));
-    this.done(item, r.message, body.note ? `“${body.note}”` : null);
+    const actor = this.actorFor(item);
+    const r = await firstValueFrom(this.api.logContact(item.item_id, actor, body));
+    const who = this.staffById().get(actor)?.name;
+    this.done(item, who ? `Contact logged by ${who}` : 'Contact logged',
+      r.reminder_due ? `Follow-up reminder set for ${fmtDate(r.reminder_due, true)}.` : 'Care closed. No follow-up reminder.');
   }
 
   async approveThankYou(item: QueueItem, text: string): Promise<void> {

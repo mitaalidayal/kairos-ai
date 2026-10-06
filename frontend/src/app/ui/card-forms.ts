@@ -8,45 +8,34 @@ import { Button, LoadMeter, RelationshipBar } from './atoms';
 
 const MIN_NOTE = 3; // the backend requires a short note for every human action
 
+/** Same flow as the original dashboard: a note, how you connected, then log with or without a follow-up. */
 @Component({
   selector: 'kai-log-contact-form',
   imports: [Button],
   template: `
-    <form class="kai-form" [attr.aria-label]="'Log what happened with ' + first()" (submit)="submit($event)">
-      <div class="kai-field">
-        <label class="kai-field__label" [for]="ids.note">What happened?</label>
-        <textarea class="kai-input" rows="3" [id]="ids.note" [attr.aria-describedby]="ids.hint"
-          [placeholder]="'Called ' + first() + '. '" [value]="note()" (input)="note.set(value($event))"></textarea>
-        <p class="kai-field__hint" [id]="ids.hint">
-          A sentence is enough. It stays in the care record, and Kairos will quote it back to you when it’s time
-          to check in.
-        </p>
-      </div>
-      <fieldset class="kai-field">
-        <legend class="kai-field__label">How you connected</legend>
-        <div class="kai-chips" role="radiogroup" aria-label="How you connected">
+    <form class="kai-form kai-logform" [attr.aria-label]="'Log what happened with ' + first()" (submit)="submit($event, false)">
+      <label class="kai-sr" [for]="ids.note">What happened?</label>
+      <textarea class="kai-input" rows="3" [id]="ids.note" [attr.aria-invalid]="shownError() ? 'true' : null"
+        [attr.aria-describedby]="shownError() ? ids.error : null"
+        placeholder="What happened? e.g. Called and listened. Bringing a meal Thursday."
+        [value]="note()" (input)="note.set(value($event))"></textarea>
+      <div class="kai-logform__row">
+        <label class="kai-sr" [for]="ids.channel">How you connected</label>
+        <select class="kai-select kai-select--sm" [id]="ids.channel" (change)="channel.set(value($event))">
           @for (c of channels; track c) {
-            <span class="kai-chip">
-              <input type="radio" [name]="ids.group" [id]="ids.group + '-' + c" [value]="c"
-                [checked]="channel() === c" (change)="channel.set(c)" />
-              <label [for]="ids.group + '-' + c">{{ c }}</label>
-            </span>
+            <option [value]="c" [selected]="channel() === c">{{ c }}</option>
           }
-        </div>
-      </fieldset>
-      <div class="kai-check">
-        <input type="checkbox" [id]="ids.close" [checked]="close()" (change)="close.set(checked($event))" />
-        <label [for]="ids.close">Close this care need. No follow-up reminder.</label>
+        </select>
+        <button kai-button variant="primary" type="submit" [disabled]="submitting()">
+          {{ submitting() && !closing() ? 'Saving…' : 'Log contact · remind me in 14 days' }}
+        </button>
+        <button kai-button variant="secondary" [disabled]="submitting()" (click)="submit($event, true)">
+          {{ submitting() && closing() ? 'Saving…' : 'Log & close care' }}
+        </button>
       </div>
       @if (shownError()) {
-        <p class="kai-form-error" role="alert">{{ shownError() }}</p>
+        <p class="kai-logform__error" role="alert" [id]="ids.error">{{ shownError() }}</p>
       }
-      <div class="kai-form__actions">
-        <button kai-button variant="primary" type="submit" [disabled]="submitting()">
-          {{ submitting() ? 'Saving…' : 'Save note' }}
-        </button>
-        <button kai-button variant="quiet" (click)="cancel.emit()">Cancel</button>
-      </div>
     </form>
   `,
 })
@@ -57,28 +46,28 @@ export class LogContactForm {
   readonly logContact = output<{ item_id: number; note: string; channel: string; close: boolean }>();
   readonly cancel = output<void>();
 
-  protected readonly channels = ['Call', 'Visit', 'Text', 'Coffee', 'Card', 'Other'];
-  protected readonly ids = { note: nextId('note'), hint: nextId('hint'), group: nextId('ch'), close: nextId('close') };
+  protected readonly channels = ['Call', 'Visit', 'Text', 'Coffee', 'Note'];
+  protected readonly ids = { note: nextId('note'), channel: nextId('ch'), error: nextId('err') };
   protected readonly note = signal('');
   protected readonly channel = signal('Call');
-  protected readonly close = signal(false);
+  protected readonly closing = signal(false);
   private readonly localError = signal<string | null>(null);
   protected readonly shownError = computed(() => this.localError() ?? this.error());
   protected readonly first = computed(() => this.item().first_name || 'them');
 
-  protected submit(e: Event): void {
+  protected submit(e: Event, close: boolean): void {
     e.preventDefault();
     const note = this.note().trim();
     if (note.length < MIN_NOTE) {
-      this.localError.set('Add a short note about what happened. A sentence is enough.');
+      this.localError.set('A short note is required.');
       return;
     }
     this.localError.set(null);
-    this.logContact.emit({ item_id: this.item().item_id, note, channel: this.channel(), close: this.close() });
+    this.closing.set(close);
+    this.logContact.emit({ item_id: this.item().item_id, note, channel: this.channel(), close });
   }
 
   protected value = value;
-  protected checked = checked;
 }
 
 @Component({
@@ -282,8 +271,4 @@ export class HandoverPicker {
 
 function value(e: Event): string {
   return (e.target as HTMLInputElement | HTMLTextAreaElement).value;
-}
-
-function checked(e: Event): boolean {
-  return (e.target as HTMLInputElement).checked;
 }

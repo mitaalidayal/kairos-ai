@@ -158,7 +158,7 @@ export class SummaryTiles {
     @for (t of toasts.toasts(); track t.id) {
       <div [class]="'kai-toast kai-toast--' + t.tone" role="status" aria-live="polite">
         <span class="kai-toast__mark" aria-hidden="true"></span>
-        <div>
+        <div class="kai-toast__text">
           <p class="kai-toast__msg">{{ t.message }}</p>
           @if (t.detail) {
             <p class="kai-toast__detail">{{ t.detail }}</p>
