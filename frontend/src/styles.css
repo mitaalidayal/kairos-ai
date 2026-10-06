@@ -1,0 +1,33 @@
+/* Kairos global styles, from the Claude Design system (kairos-design-brief/design-system).
+   Every value comes from tokens.css. Component blocks are namespaced kai-<component>, so they
+   live here as global partials rather than in Angular's emulated component styles.
+   TODO: fonts load from Google Fonts and need internet at demo time; self-host before the demo. */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import './styles/tokens.css';
+@import './styles/components/base.css';
+@import './styles/components/button.css';
+@import './styles/components/decisiontag.css';
+@import './styles/components/urgencypill.css';
+@import './styles/components/topbar.css';
+@import './styles/components/greeting.css';
+@import './styles/components/summarytile.css';
+@import './styles/components/queuecard.css';
+@import './styles/components/blockedmessage.css';
+@import './styles/components/privatebrief-and-why.css';
+@import './styles/components/forms.css';
+@import './styles/components/relationshipbar-and-loadmeter.css';
+@import './styles/components/capacitybanner-and-capacityline.css';
+@import './styles/components/attentionqueue.css';
+@import './styles/components/emptystate.css';
+@import './styles/components/toast.css';
+@import './styles/components/persondrawer.css';
+@import './styles/components/attendancestrip.css';
+@import './styles/components/signallist.css';
+@import './styles/components/readtext.css';
+@import './styles/components/agenttrace.css';
+@import './styles/components/persondecision.css';
+@import './styles/components/history.css';
+@import './styles/components/decisionstable.css';
+@import './styles/components/audittimeline.css';
+@import './styles/components/howkairosdecides.css';
+@import './styles/components/app-shell.css';

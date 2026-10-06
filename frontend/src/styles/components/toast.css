@@ -1,0 +1,10 @@
+/* ── Toast ────────────────────────────────────────────── */
+.kai-toast-region { position: fixed; z-index: 50; left: 50%; bottom: var(--space-5); transform: translateX(-50%); display: grid; gap: var(--space-2); width: min(480px, calc(100vw - 32px)); }
+.kai-toast { display: flex; align-items: flex-start; gap: var(--space-3); background: var(--primary); color: var(--on-primary); border-radius: var(--radius-md); padding: var(--space-3) var(--space-2) var(--space-3) var(--space-4); box-shadow: var(--shadow-drawer); }
+.kai-toast p { margin: 0; }
+.kai-toast__msg { font-weight: 700; }
+.kai-toast__detail { font-size: 14px; line-height: 20px; opacity: .85; }
+.kai-toast__mark { flex: none; width: 14px; height: 8px; margin-top: 6px; border-left: 2.5px solid currentColor; border-bottom: 2.5px solid currentColor; transform: rotate(-45deg); }
+.kai-toast .kai-icon-btn { color: inherit; width: 32px; height: 32px; font-size: 22px; }
+.kai-toast .kai-icon-btn:hover { background: rgba(127,127,127,.25); color: inherit; }
+.kai-toast--error .kai-toast__mark { border: 2.5px solid currentColor; border-radius: 50%; width: 12px; height: 12px; transform: none; margin-top: 4px; }

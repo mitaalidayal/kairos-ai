@@ -1,0 +1,14 @@
+/* ── AgentTrace ───────────────────────────────────────── */
+.kai-trace { list-style: none; margin: var(--space-3) 0 0; padding: var(--space-3) var(--space-4); background: var(--paper-sunk); border-radius: var(--radius-md); }
+.kai-trace__step { position: relative; display: grid; grid-template-columns: 14px 1fr; gap: var(--space-3); padding-bottom: var(--space-3); }
+.kai-trace__step:last-child { padding-bottom: 0; }
+.kai-trace__step::before { content: ""; position: absolute; left: 6px; top: 14px; bottom: -2px; width: 2px; background: var(--rule-strong); }
+.kai-trace__step:last-child::before { display: none; }
+.kai-trace__node { width: 14px; height: 14px; border-radius: 50%; background: var(--ink); margin-top: 4px; box-shadow: 0 0 0 3px var(--paper-sunk); position: relative; }
+.kai-trace__step.is-skipped .kai-trace__node { background: var(--paper-sunk); border: 2px dashed var(--rule-strong); box-sizing: border-box; }
+.kai-trace__title { margin: 0; font-weight: 700; font-size: 14px; line-height: 20px; }
+.kai-trace__body { display: flex; flex-direction: column; font: 400 13px/18px var(--font-mono); color: var(--ink-muted); gap: 2px; }
+.kai-trace__body .kai-tag { font-family: var(--font-sans); }
+.kai-trace__decision { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.kai-trace__skip { font-style: italic; font-family: var(--font-sans); }
+.kai-trace code { color: var(--ink); }

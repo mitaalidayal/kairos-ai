@@ -1,0 +1,10 @@
+/* ── BlockedMessage ───────────────────────────────────── */
+.kai-blocked-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.kai-blocked { position: relative; padding: var(--space-3) var(--space-4); padding-right: 96px; background: var(--paper-sunk); border-radius: var(--radius-md); }
+.kai-blocked__meta { display: flex; flex-wrap: wrap; gap: 0 var(--space-2); font-size: 14px; line-height: 20px; }
+.kai-blocked__wf { font-weight: 700; color: var(--ink); }
+.kai-blocked__when { color: var(--ink-muted); }
+.kai-blocked__body { margin: 4px 0 0; color: var(--ink-muted); }
+.kai-blocked__body s { text-decoration-color: var(--kind, var(--ink-faint)); text-decoration-thickness: 2px; }
+.kai-blocked__stamp { position: absolute; top: 50%; right: var(--space-3); transform: translateY(-50%) rotate(-6deg); font: 700 11px/14px var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--kind, var(--ink)); border: 2px solid currentColor; border-radius: var(--radius-sm); padding: 3px 6px; }
+@media (max-width: 480px) { .kai-blocked { padding-right: var(--space-4); padding-top: 34px; } .kai-blocked__stamp { top: 10px; transform: rotate(-4deg); } }

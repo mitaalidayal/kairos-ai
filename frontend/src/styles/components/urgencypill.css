@@ -1,0 +1,8 @@
+/* ── UrgencyPill ──────────────────────────────────────── */
+.kai-urgency { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 6px; font: 400 14px/20px var(--font-sans); color: var(--ink-muted); }
+.kai-urgency__dot { width: 8px; height: 8px; border-radius: 50%; border: 2px solid var(--ink-faint); align-self: center; flex: none; box-sizing: border-box; }
+.kai-urgency__word { font-weight: 700; color: var(--ink); white-space: nowrap; }
+.kai-urgency--urgent .kai-urgency__dot { background: var(--care); border-color: var(--care); box-shadow: 0 0 0 4px var(--care-soft); }
+.kai-urgency--urgent .kai-urgency__word { color: var(--care); }
+.kai-urgency--high .kai-urgency__dot { background: var(--thank); border-color: var(--thank); }
+.kai-urgency--normal .kai-urgency__word { font-weight: 400; color: var(--ink-muted); }

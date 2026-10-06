@@ -1,0 +1,5 @@
+/* ── History ──────────────────────────────────────────── */
+.kai-hist-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.kai-hist { display: grid; grid-template-columns: 64px 1fr; gap: var(--space-3); font-size: 14px; line-height: 20px; }
+.kai-hist__when { font-family: var(--font-mono); font-size: 13px; color: var(--ink-muted); }
+.kai-hist--contact span:last-child { font-weight: 700; }

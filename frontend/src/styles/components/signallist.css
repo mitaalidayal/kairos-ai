@@ -1,0 +1,7 @@
+/* ── SignalList ───────────────────────────────────────── */
+.kai-signals { margin: 0; display: grid; }
+.kai-signals__row { display: grid; grid-template-columns: 160px 1fr; gap: var(--space-3); padding: var(--space-2) 0; border-bottom: 1px solid var(--rule); }
+.kai-signals__row dt { color: var(--ink-muted); font-size: 14px; }
+.kai-signals__row dd { margin: 0; }
+.kai-signals__row.is-notable dd { font-weight: 700; }
+@media (max-width: 480px) { .kai-signals__row { grid-template-columns: 1fr; gap: 0; } }

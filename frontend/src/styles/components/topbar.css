@@ -1,0 +1,19 @@
+/* ── TopBar ───────────────────────────────────────────── */
+.kai-topbar { display: grid; grid-template-columns: 1fr auto auto; grid-template-areas: "brand viewer demo" "tabs tabs tabs"; gap: var(--space-3) var(--space-5); align-items: end; padding: var(--space-4) var(--space-5) 0; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.kai-topbar__brand { grid-area: brand; display: flex; flex-direction: column; }
+.kai-wordmark { font: 600 28px/32px var(--font-display); letter-spacing: -.01em; color: var(--ink); }
+.kai-topbar__sub { font: italic 400 14px/20px var(--font-sans); color: var(--ink-muted); }
+.kai-topbar__viewer { grid-area: viewer; display: flex; flex-direction: column; gap: 4px; }
+.kai-select { font: 400 16px/24px var(--font-sans); color: var(--ink); background: var(--paper-raised); border: 1.5px solid var(--rule-strong); border-radius: var(--radius-sm); padding: 8px 12px; min-height: 44px; min-width: 240px; }
+.kai-topbar__demo { grid-area: demo; display: flex; align-items: center; gap: var(--space-1); padding: 4px 4px 4px var(--space-3); border: 1px dashed var(--rule-strong); border-radius: var(--radius-md); }
+.kai-clock { font: 400 13px/18px var(--font-mono); color: var(--ink-muted); margin-right: var(--space-2); white-space: nowrap; }
+.kai-clock__k { text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
+.kai-tabs { grid-area: tabs; display: flex; gap: var(--space-5); overflow-x: auto; }
+.kai-tabs__tab { font: 400 16px/24px var(--font-sans); background: none; border: 0; padding: var(--space-2) 0 var(--space-3); color: var(--ink-muted); border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+.kai-tabs__tab[aria-current="page"] { color: var(--ink); font-weight: 700; border-bottom-color: var(--ink); }
+@media (max-width: 760px) {
+  .kai-topbar { grid-template-columns: 1fr; grid-template-areas: "brand" "viewer" "demo" "tabs"; padding: var(--space-4) var(--space-4) 0; }
+  .kai-select { min-width: 0; width: 100%; }
+  .kai-topbar__demo { justify-self: start; flex-wrap: wrap; }
+  .kai-clock { flex-basis: 100%; padding-top: 4px; }
+}

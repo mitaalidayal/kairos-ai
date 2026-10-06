@@ -1,0 +1,85 @@
+<kai-top-bar
+  [staff]="store.staff()"
+  [viewer]="store.viewer()"
+  [simDate]="store.summary()?.sim_date ?? null"
+  [screen]="store.screen()"
+  (viewerChange)="store.setViewer($event)"
+  (navigate)="store.navigate($event)"
+  (advance)="store.advanceDays($event)"
+  (rerun)="store.rerun()"
+/>
+
+<main class="app-main">
+  @switch (store.screen()) {
+    @case ('queue') {
+      <kai-greeting [staff]="store.me()" [count]="store.queue().length" [simDate]="store.summary()?.sim_date ?? null" />
+      @if (store.summary(); as summary) {
+        <kai-summary-tiles [summary]="summary" />
+      }
+      <kai-attention-queue
+        [items]="store.queue()"
+        [viewer]="store.me()"
+        [loading]="store.queueLoading()"
+        [error]="store.queueError()"
+        [leaving]="store.leaving()"
+        (openMember)="openMember($event)"
+      />
+    }
+    @case ('decisions') {
+      <section class="app-split">
+        <div>
+          <h1 class="app-h">All decisions</h1>
+          <p class="app-lead">Every scheduled message and what Kairos did with it.</p>
+        </div>
+        @if (store.listError()) {
+          <p class="kai-form-error" role="alert">{{ store.listError() }}</p>
+        } @else if (store.decisions(); as rows) {
+          <kai-decisions-table [rows]="rows" (openMember)="openMember($event)" />
+        } @else {
+          <div class="kai-skeleton" aria-busy="true" aria-label="Loading"><span></span></div>
+        }
+      </section>
+    }
+    @case ('audit') {
+      <section class="app-split">
+        <div>
+          <h1 class="app-h">Audit log</h1>
+          <p class="app-lead">Every agent decision and every human action, newest first.</p>
+        </div>
+        @if (store.listError()) {
+          <p class="kai-form-error" role="alert">{{ store.listError() }}</p>
+        } @else if (store.audit(); as entries) {
+          <ol kai-audit-timeline [entries]="entries" [staffById]="store.staffById()" (openMember)="openMember($event)"></ol>
+        } @else {
+          <div class="kai-skeleton" aria-busy="true" aria-label="Loading"><span></span></div>
+        }
+      </section>
+    }
+    @case ('how') {
+      <section class="app-split">
+        <div>
+          <h1 class="app-h">How Kairos decides</h1>
+          <p class="app-lead">
+            Six narrow agents run in a fixed order for every scheduled message. Only the detector reads free text,
+            and it can only return a label. Any error becomes WAIT + BLOCK.
+          </p>
+        </div>
+        <ol kai-how-it-works></ol>
+      </section>
+    }
+  }
+</main>
+
+@if (store.openMemberId()) {
+  <div class="kai-scrim" (click)="onScrimClick($event)">
+    <kai-person-drawer
+      [profile]="profile()"
+      [loading]="profileLoading()"
+      [error]="profileError()"
+      [staffById]="store.staffById()"
+      (close)="closeMember()"
+    />
+  </div>
+}
+
+<kai-toast-region />

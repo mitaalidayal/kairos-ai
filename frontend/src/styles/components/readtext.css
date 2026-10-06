@@ -1,0 +1,13 @@
+/* ── ReadText ─────────────────────────────────────────── */
+.kai-read { background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+.kai-read__head { display: flex; gap: var(--space-2); flex-wrap: wrap; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-read__kind { font-weight: 700; color: var(--ink); }
+.kai-read__status::before, .kai-read__date::before { content: "· "; }
+.kai-read__labels { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.kai-label-chip { display: inline-flex; align-items: center; font-size: 14px; line-height: 20px; padding: 1px 10px; border-radius: var(--radius-pill); background: var(--care-soft); color: var(--care); font-weight: 700; }
+.kai-label-chip--quiet { background: var(--paper-sunk); color: var(--ink-muted); font-weight: 400; }
+.kai-label-chip--guard { background: var(--paper-sunk); color: var(--ink); font-weight: 400; border: 1px solid var(--rule-strong); align-self: flex-start; }
+.kai-label-chip--guard::before { content: ""; width: 10px; height: 12px; margin-right: 6px; background: var(--ask); clip-path: polygon(50% 0, 100% 18%, 100% 55%, 50% 100%, 0 55%, 0 18%); }
+.kai-read__text { margin: 0; font: italic 400 17px/26px var(--font-display); padding-left: var(--space-3); border-left: 2px solid var(--rule-strong); }
+.kai-read__locked { margin: 0; display: flex; gap: var(--space-2); color: var(--ink-muted); background: var(--paper-sunk); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); font-size: 14px; line-height: 20px; }
+.kai-read__locked--consent { color: var(--ink); }

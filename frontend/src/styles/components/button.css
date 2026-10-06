@@ -1,0 +1,12 @@
+/* ── Button ───────────────────────────────────────────── */
+.kai-btn { font: 700 16px/24px var(--font-sans); padding: 10px 18px; min-height: 44px; border-radius: var(--radius-md); border: 1.5px solid transparent; cursor: pointer; display: inline-flex; align-items: center; gap: var(--space-2); }
+.kai-btn--primary { background: var(--primary); color: var(--on-primary); }
+.kai-btn--primary:hover:not(:disabled) { box-shadow: inset 0 0 0 100px rgba(127,127,127,.18); }
+.kai-btn--secondary { background: var(--paper-raised); color: var(--ink); border-color: var(--rule-strong); }
+.kai-btn--secondary:hover:not(:disabled) { background: var(--paper-sunk); }
+.kai-btn--quiet { background: transparent; color: var(--ink-muted); font-weight: 400; padding-inline: var(--space-3); }
+.kai-btn--quiet:hover:not(:disabled) { color: var(--ink); background: var(--paper-sunk); }
+.kai-btn--sm { font-size: 14px; line-height: 20px; padding: 6px 10px; min-height: 36px; }
+.kai-btn:disabled { cursor: not-allowed; opacity: .55; }
+.kai-icon-btn { width: 44px; height: 44px; border-radius: var(--radius-pill); border: 0; background: transparent; color: var(--ink-muted); font-size: 26px; line-height: 1; cursor: pointer; flex: none; }
+.kai-icon-btn:hover { background: var(--paper-sunk); color: var(--ink); }

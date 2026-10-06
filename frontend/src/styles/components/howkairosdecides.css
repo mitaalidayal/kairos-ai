@@ -1,0 +1,20 @@
+/* ── HowKairosDecides ─────────────────────────────────── */
+/* The agent pipeline as a numbered notebook list; the human step at the end carries the weight. */
+.kai-how { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.kai-how__step { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: var(--space-4); padding-bottom: var(--space-3); }
+.kai-how__step:last-child { padding-bottom: 0; }
+.kai-how__step::before { content: ""; position: absolute; left: 17px; top: 36px; bottom: 0; width: 2px; background: var(--rule-strong); }
+.kai-how__step:last-child::before { display: none; }
+.kai-how__node { position: relative; z-index: 1; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; box-sizing: border-box; margin-top: var(--space-3); font: 500 15px/1 var(--font-mono); color: var(--ink-muted); background: var(--paper); border: 1.5px solid var(--rule-strong); }
+.kai-how__card { display: grid; grid-template-columns: minmax(180px, 240px) 1fr; gap: var(--space-2) var(--space-5); background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: var(--space-4) var(--space-5); box-shadow: var(--shadow-card); }
+.kai-how__name { font: 600 19px/26px var(--font-display); margin: 0; color: var(--ink); }
+.kai-how__does { margin: 0; color: var(--ink-muted); }
+.kai-how__step--human .kai-how__node { background: var(--primary); border-color: var(--primary); color: var(--on-primary); font: 700 16px/1 var(--font-sans); }
+.kai-how__step--human .kai-how__card { background: var(--ask-soft); border-color: transparent; }
+.kai-how__step--human .kai-how__does { color: var(--ink); }
+@media (max-width: 720px) {
+  .kai-how__step { grid-template-columns: 28px 1fr; gap: var(--space-3); }
+  .kai-how__step::before { left: 13px; top: 28px; }
+  .kai-how__node { width: 28px; height: 28px; font-size: 13px; }
+  .kai-how__card { grid-template-columns: 1fr; padding: var(--space-4); }
+}
