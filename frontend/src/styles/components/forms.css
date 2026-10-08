@@ -1,0 +1,48 @@
+/* ── forms (LogContactForm, ThankYouEditor, ReviewActions, HandoverPicker) ── */
+.kai-form { display: flex; flex-direction: column; gap: var(--space-4); }
+.kai-form__intro { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 20px; }
+.kai-form__actions { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.kai-field { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.kai-field__label { font-weight: 700; padding: 0; }
+.kai-field__hint { margin: 0; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-input { font: 400 16px/24px var(--font-sans); color: var(--ink); background: var(--paper-raised); border: 1.5px solid var(--rule-strong); border-radius: var(--radius-sm); padding: 10px 12px; resize: vertical; width: 100%; box-sizing: border-box; }
+.kai-input::placeholder { color: var(--ink-faint); }
+.kai-input--letter { font: 400 17px/27px var(--font-display); background: var(--paper); }
+.kai-input[aria-invalid="true"] { border-color: var(--wait); }
+.kai-chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.kai-chip input { position: absolute; opacity: 0; pointer-events: none; }
+.kai-chip label { display: inline-flex; align-items: center; min-height: 40px; padding: 0 var(--space-4); border: 1.5px solid var(--rule-strong); border-radius: var(--radius-pill); cursor: pointer; }
+.kai-chip input:checked + label { background: var(--primary); color: var(--on-primary); border-color: var(--primary); font-weight: 700; }
+.kai-chip input:focus-visible + label { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.kai-check { display: flex; gap: var(--space-2); align-items: center; }
+.kai-check input { width: 20px; height: 20px; accent-color: var(--primary); margin: 0; }
+.kai-form-error { margin: 0; padding: var(--space-3) var(--space-4); background: var(--wait-soft); color: var(--ink); border-radius: var(--radius-md); }
+.kai-refusal { padding: var(--space-4); background: var(--wait-soft); border-radius: var(--radius-md); border: 1.5px solid var(--wait); }
+.kai-refusal p { margin: 0 0 var(--space-2); }
+.kai-refusal p:last-child { margin: 0; }
+.kai-refusal__title { font-weight: 700; color: var(--wait); }
+.kai-refusal__quote { font: italic 400 16px/24px var(--font-display); padding-left: var(--space-3); border-left: 3px solid var(--wait); }
+.kai-refusal__help { color: var(--ink-muted); font-size: 14px; line-height: 20px; }
+.kai-options { display: grid; gap: var(--space-2); }
+.kai-option { position: relative; }
+.kai-option input { position: absolute; left: 16px; top: 16px; width: 20px; height: 20px; margin: 0; accent-color: var(--primary); }
+.kai-option label { display: flex; flex-direction: column; padding: var(--space-3) var(--space-4) var(--space-3) 48px; border: 1.5px solid var(--rule-strong); border-radius: var(--radius-md); cursor: pointer; }
+.kai-option input:checked + label { border-color: var(--ink); background: var(--paper-sunk); }
+.kai-option__title { font-weight: 700; }
+.kai-option__desc { font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-option.is-disabled label { cursor: not-allowed; border-style: dashed; color: var(--ink-faint); }
+.kai-option.is-disabled .kai-option__desc { color: var(--ink-faint); }
+.kai-lock-note { display: flex; gap: var(--space-2); margin: 0; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-lock-note__icon { flex: none; width: 12px; height: 9px; margin-top: 7px; border: 2px solid currentColor; border-radius: 2px; position: relative; box-sizing: border-box; }
+.kai-lock-note__icon::before { content: ""; position: absolute; left: 1px; bottom: 7px; width: 6px; height: 6px; border: 2px solid currentColor; border-bottom: 0; border-radius: 4px 4px 0 0; box-sizing: border-box; }
+.kai-handover__list { display: grid; gap: var(--space-2); }
+.kai-handover__opt { position: relative; }
+.kai-handover__opt input { position: absolute; left: 16px; top: 18px; width: 20px; height: 20px; margin: 0; accent-color: var(--primary); }
+.kai-handover__opt label { display: grid; gap: var(--space-2); padding: var(--space-3) var(--space-4) var(--space-3) 48px; border: 1.5px solid var(--rule-strong); border-radius: var(--radius-md); cursor: pointer; }
+.kai-handover__opt input:checked + label { border-color: var(--ink); background: var(--paper-sunk); }
+/* LogContactForm: note, then channel + both log buttons on one row (wraps on a phone) */
+.kai-logform { gap: var(--space-3); }
+.kai-logform__row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.kai-select--sm { min-width: 0; width: auto; }
+.kai-logform__error { margin: 0; font-size: 14px; line-height: 20px; color: var(--wait); }
+@media (max-width: 600px) { .kai-logform__row .kai-btn, .kai-logform__row .kai-select { flex: 1 1 100%; justify-content: center; } }

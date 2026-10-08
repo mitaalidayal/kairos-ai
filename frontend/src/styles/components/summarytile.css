@@ -1,0 +1,12 @@
+/* ── SummaryTile ──────────────────────────────────────── */
+.kai-tiles { display: grid; gap: var(--space-3); }
+.kai-tiles__story, .kai-tiles__decisions { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-3); }
+.kai-tile { background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: var(--space-4); display: flex; flex-direction: column; gap: 4px; align-items: flex-start; box-shadow: var(--shadow-card); }
+.kai-tile__value { font: 500 36px/40px var(--font-display); font-variant-numeric: oldstyle-nums tabular-nums; color: var(--ink); }
+.kai-tile__caption { font: 400 14px/20px var(--font-sans); color: var(--ink-muted); }
+.kai-tile--care { background: var(--care-soft); border-color: transparent; }
+.kai-tile--care .kai-eyebrow, .kai-tile--care .kai-tile__value { color: var(--care); }
+.kai-tile--quiet { background: transparent; border-style: dashed; box-shadow: none; }
+.kai-tiles__decisions .kai-tile { padding: var(--space-3) var(--space-4); }
+.kai-tiles__decisions .kai-tile__value { font-size: 28px; line-height: 32px; }
+@media (max-width: 760px) { .kai-tiles__story, .kai-tiles__decisions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

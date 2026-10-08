@@ -1,0 +1,19 @@
+/* ── RelationshipBar & LoadMeter ──────────────────────── */
+.kai-rel { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "who pct" "track track"; gap: 6px var(--space-3); align-items: baseline; }
+.kai-rel__who { grid-area: who; display: flex; flex-wrap: wrap; gap: 0 var(--space-2); align-items: baseline; }
+.kai-rel__name { font-weight: 700; }
+.kai-rel__role { color: var(--ink-muted); font-size: 14px; }
+.kai-rel__badge { font: 700 11px/16px var(--font-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); background: var(--ask-soft); padding: 0 8px; border-radius: var(--radius-pill); }
+.kai-rel__pct { grid-area: pct; font: 500 15px/20px var(--font-mono); color: var(--ink-muted); }
+.kai-rel__track { grid-area: track; height: 6px; border-radius: var(--radius-pill); background: var(--paper-sunk); overflow: hidden; }
+.kai-rel__fill { display: block; height: 100%; background: var(--ink-muted); border-radius: inherit; }
+.kai-rel--top .kai-rel__track { height: 10px; }
+.kai-rel--top .kai-rel__fill { background: var(--ink); }
+.kai-rel--top .kai-rel__pct { color: var(--ink); font-size: 20px; line-height: 24px; }
+.kai-rel--compact .kai-rel__track { height: 6px; }
+.kai-load { display: inline-flex; align-items: center; gap: var(--space-2); font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-load__cells { display: inline-flex; gap: 3px; }
+.kai-load__cell { width: 10px; height: 10px; border-radius: 3px; border: 1.5px solid var(--rule-strong); box-sizing: border-box; }
+.kai-load__cell.is-used { background: var(--ink-muted); border-color: var(--ink-muted); }
+.kai-load__cell.is-over { background: var(--thank); border-color: var(--thank); }
+.kai-load--full .kai-load__text { color: var(--thank); font-weight: 700; }

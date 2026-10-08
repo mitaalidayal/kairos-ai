@@ -1,0 +1,7 @@
+/* ── PersonDecision ───────────────────────────────────── */
+.kai-pdec { border: 1px solid var(--rule); background: var(--paper-raised); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: var(--space-1); }
+.kai-pdec__top { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.kai-pdec__status { font-size: 14px; color: var(--ink-muted); }
+.kai-pdec__wf { margin: 0; font-weight: 700; }
+.kai-pdec__wf .kai-muted { font-weight: 400; font-size: 14px; }
+.kai-pdec__reason { margin: 0; }

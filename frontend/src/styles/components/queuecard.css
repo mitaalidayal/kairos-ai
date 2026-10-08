@@ -1,0 +1,24 @@
+/* ── QueueCard ────────────────────────────────────────── */
+.kai-card { --kind: var(--care); --kind-soft: var(--care-soft); position: relative; background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--radius-lg); padding: var(--space-5); box-shadow: var(--shadow-card); display: flex; flex-direction: column; gap: var(--space-3); }
+.kai-card--thank { --kind: var(--thank); --kind-soft: var(--thank-soft); }
+.kai-card--review { --kind: var(--wait); --kind-soft: var(--wait-soft); border-style: dashed; border-color: var(--rule-strong); }
+.kai-card--reminder { --kind: var(--reminder); --kind-soft: var(--reminder-soft); }
+.kai-card__top { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+.kai-card__headline { font: 600 21px/27px var(--font-display); margin: var(--space-1) 0 0; color: var(--ink); text-wrap: balance; }
+.kai-person-link { align-self: flex-start; font: 700 16px/24px var(--font-sans); color: var(--ink); background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-color: var(--rule-strong); text-underline-offset: 4px; text-decoration-thickness: 1.5px; cursor: pointer; margin-top: calc(-1 * var(--space-2)); }
+.kai-person-link:hover { text-decoration-color: currentColor; }
+.kai-person-link--sm { font-size: inherit; line-height: inherit; margin: 0; }
+.kai-card__summary { margin: 0; }
+.kai-card__handed { margin: 0; font-size: 14px; line-height: 20px; color: var(--ink-muted); font-style: italic; }
+.kai-card__quote { margin: 0; padding: var(--space-3) var(--space-4); background: var(--kind-soft); border-radius: var(--radius-md); font: italic 400 17px/26px var(--font-display); }
+.kai-card__quote p { margin: 0; }
+.kai-card__quote footer { font: 400 13px/18px var(--font-sans); font-style: normal; color: var(--ink-muted); margin-top: var(--space-1); }
+.kai-card__stopped { display: flex; flex-direction: column; gap: var(--space-2); }
+.kai-card__route { border-top: 1px solid var(--rule); padding-top: var(--space-3); font-size: 14px; line-height: 20px; }
+.kai-card__route p { margin: 0; font-weight: 700; }
+.kai-card__route-k { font-weight: 400; color: var(--ink-muted); }
+.kai-card__route-why { font-weight: 400; color: var(--ink-muted); }
+.kai-card__actions { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+.kai-card__panel:empty { display: none; }
+.kai-card__panel { border-top: 1px solid var(--rule); padding-top: var(--space-4); }
+@media (max-width: 600px) { .kai-card { padding: var(--space-4); } .kai-card__actions .kai-btn { flex: 1 1 auto; justify-content: center; } }

@@ -1,0 +1,18 @@
+/* ── AuditTimeline ────────────────────────────────────── */
+.kai-audit { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.kai-audit__item { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: var(--space-3); padding-bottom: var(--space-5); }
+.kai-audit__item::before { content: ""; position: absolute; left: 17px; top: 36px; bottom: 0; width: 2px; background: var(--rule); }
+.kai-audit__item:last-child::before { display: none; }
+.kai-audit__avatar { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font: 600 14px/1 var(--font-display); background: var(--paper-sunk); color: var(--ink-muted); border: 1.5px dashed var(--rule-strong); box-sizing: border-box; }
+.kai-audit__item--person .kai-audit__avatar { background: var(--primary); color: var(--on-primary); border: 0; font-family: var(--font-sans); font-weight: 700; }
+.kai-audit__item--system .kai-audit__avatar { border-style: dotted; font-size: 24px; }
+.kai-audit__main { display: flex; flex-direction: column; gap: 4px; min-width: 0; padding-top: 6px; }
+.kai-audit__main p { margin: 0; }
+.kai-audit__line { display: flex; flex-wrap: wrap; align-items: center; gap: 0 4px; }
+.kai-audit__actor { font-weight: 700; }
+.kai-audit__role { color: var(--ink-muted); font-size: 14px; }
+.kai-audit__sched { font-size: 14px; line-height: 20px; color: var(--ink-muted); text-decoration: line-through; text-decoration-color: var(--ink-faint); }
+.kai-audit__sched .kai-eyebrow { text-decoration: none; display: inline; }
+.kai-audit__item--person .kai-audit__sched { text-decoration: none; }
+.kai-audit__reason { font-size: 15px; }
+.kai-audit__meta { font: 400 13px/18px var(--font-mono); color: var(--ink-muted); }

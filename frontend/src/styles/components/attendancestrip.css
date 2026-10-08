@@ -1,0 +1,15 @@
+/* ── AttendanceStrip ──────────────────────────────────── */
+.kai-att { margin: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+.kai-att__halves { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+.kai-att__half--recent { padding-left: var(--space-3); border-left: 2px solid var(--rule-strong); }
+.kai-att__k { margin: 0 0 6px; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+.kai-att__k strong { color: var(--ink); font: 600 18px/20px var(--font-display); }
+.kai-att__row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; }
+.kai-att__cell { height: 28px; border-radius: var(--radius-sm); box-sizing: border-box; }
+.kai-att__cell.is-in { background: var(--ask); }
+.kai-att__cell.is-out { background: transparent; border: 1.5px dashed var(--rule-strong); }
+.kai-att__cap { display: flex; gap: var(--space-4); flex-wrap: wrap; font-size: 13px; line-height: 18px; color: var(--ink-muted); }
+.kai-att__key { display: inline-flex; align-items: center; gap: 6px; }
+.kai-att__key::before { content: ""; width: 12px; height: 12px; border-radius: 3px; }
+.kai-att__key--in::before { background: var(--ask); }
+.kai-att__key--out::before { border: 1.5px dashed var(--rule-strong); box-sizing: border-box; }

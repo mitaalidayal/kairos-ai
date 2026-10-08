@@ -1,0 +1,8 @@
+/* ── EmptyState ───────────────────────────────────────── */
+.kai-empty { text-align: center; padding: var(--space-8) var(--space-5); display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+.kai-empty__art { position: relative; width: 168px; height: 96px; margin-bottom: var(--space-4); }
+.kai-empty__art span { display: block; height: 2px; background: var(--rule); margin: 0 0 22px; border-radius: 2px; }
+.kai-empty__art span:first-child { margin-top: 24px; }
+.kai-empty__art i { position: absolute; right: 18px; top: 4px; width: 22px; height: 22px; border-radius: 50%; background: var(--thank-soft); box-shadow: 0 0 0 8px var(--paper-sunk); }
+.kai-empty__title { font: 500 28px/34px var(--font-display); margin: 0; }
+.kai-empty__sub { color: var(--ink-muted); margin: 0; max-width: 40ch; }
