@@ -88,6 +88,18 @@ Open **http://localhost:8765**. On first start, Kairos loads the CSVs into a loc
 
 To start from scratch at any time, click **Re-run agents**, or stop the server and delete `kairos.db`.
 
+**4. (Optional) run the Angular dashboard**
+
+The repo has two dashboards that talk to the same API: the original single page served by FastAPI at :8765, and a newer Angular + TypeScript version in [`frontend/`](frontend/) built from the Kairos design system. To run the Angular one, keep the backend from step 3 running and, in a second terminal:
+
+**Prerequisites:** Node 22, 24 or 26+ (Angular 22 does not support odd-numbered Node versions).
+```bash
+cd frontend
+npm install
+npx ng serve
+```
+Open **http://localhost:4200**. Requests to `/api` are proxied to the backend on :8765 (`frontend/proxy.conf.json`). It has the same screens and actions as the original, plus a **How Kairos decides** tab and queue filters by card type. Details in [`frontend/README.md`](frontend/README.md).
+
 ---
 
 ## Using the dashboard
@@ -110,7 +122,7 @@ To start from scratch at any time, click **Re-run agents**, or stop the server a
 
 Click any name to open their profile: attendance strip, signals, what Kairos read, relationships, and an **agent trace** showing each step of the decision.
 
-**Try it:** open http://localhost:8765/?as=ST13#M0010. That's Isabella's queue with Marcus's profile open. The full demo script is in [`docs/DEMO.md`](docs/DEMO.md).
+**Try it:** open http://localhost:8765/?as=ST13#M0010 (or http://localhost:4200/?as=ST13#M0010 in the Angular dashboard). That's Isabella's queue with Marcus's profile open. The full demo script is in [`docs/DEMO.md`](docs/DEMO.md).
 
 > **About dates:** the dataset is a snapshot of **Oct 3, 2026**, and all time windows ("prayer request in the last 45 days") are measured from that date, so results are reproducible whenever you run it.
 
@@ -158,6 +170,9 @@ Also covered:
 
 # End-to-end demo flow (server must be running)
 .venv/bin/python scripts/demo_flow.py
+
+# Angular frontend unit tests (Vitest), from frontend/
+npx ng test --watch=false
 ```
 
 To re-label every text with Claude (needs `ANTHROPIC_API_KEY` in `.env`):
@@ -180,7 +195,11 @@ kairos/
   config.py         thresholds (45/21/14/7/30-day windows), model, .env
 server/
   app.py            FastAPI API
-  static/index.html the dashboard (single page, no build step)
+  static/index.html the original dashboard (single page, no build step)
+frontend/           Angular + TypeScript dashboard (see frontend/README.md)
+  src/app/core/     API service, app state, types, formatting
+  src/app/ui/       queue cards, forms, person drawer, tables, audit log
+  src/styles/       design tokens + one CSS partial per component
 scripts/            scoring, tests, cache warm-up, demo rehearsal
 data/               synthetic church data (CSVs) + test cases
 docs/DEMO.md        4-minute demo walkthrough
@@ -188,13 +207,14 @@ evaluate.py         scorer
 baseline_rules.py   naive keyword baseline (the floor to beat)
 ```
 
-**Tech:** Python 3.12, FastAPI, SQLite, vanilla JS, Anthropic Claude (`claude-opus-5-5`) for the Sacred Moment Detector.
+**Tech:** Python 3.12, FastAPI, SQLite, vanilla JS (original dashboard), Angular 22 + TypeScript (new dashboard), Anthropic Claude (`claude-opus-5-5`) for the Sacred Moment Detector.
 
 ---
 
 ## Limitations
 
 - **Mock everything:** no real integrations, email or SMS. "Viewing as" is a demo selector, not real authentication.
+- **The Angular dashboard needs its own dev server** (`ng serve`); FastAPI doesn't serve the built app yet. Its fonts load from Google Fonts, so it needs internet.
 - **Single-user demo backend:** one SQLite file, not built for concurrent users.
 - **Routing doesn't account for capacity automatically.** Overloaded staff are warned and can hand cards over, but nothing is reassigned for them.
 - **Urgency weights and channel-consent rules are product assumptions** that a church's pastoral and legal leads should confirm before real use.
