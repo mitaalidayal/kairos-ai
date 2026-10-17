@@ -63,6 +63,18 @@ flowchart LR
 
 **Prerequisites:** [uv](https://docs.astral.sh/uv/getting-started/installation/) (it installs Python 3.12 for you if needed).
 
+## Deploy the Angular dashboard to GitHub Pages
+
+Every push to `main` that changes `frontend/` builds and deploys the Angular dashboard through
+[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). The site URL is:
+
+`https://mitaalidayal.github.io/kairos-ai/`
+
+Enable **Settings → Pages → Source: GitHub Actions** once in the repository. GitHub Pages only
+hosts the compiled frontend; the dashboard still needs a separately hosted FastAPI backend. Set
+the API URL in [`frontend/public/config.js`](frontend/public/config.js) before deploying if the
+backend is not served from the same origin. The local development proxy remains unchanged.
+
 **1. Clone and install**
 ```bash
 git clone https://github.com/mitaalidayal/kairos-ai.git

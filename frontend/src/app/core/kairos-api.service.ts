@@ -23,7 +23,9 @@ export const REVIEW_MESSAGE: Record<ReviewAction, string> = {
 @Injectable({ providedIn: 'root' })
 export class KairosApiService {
   private readonly http = inject(HttpClient);
-  private readonly base = '/api';
+  private readonly base = typeof window !== 'undefined'
+    ? (window as Window & { __KAIROS_API_URL__?: string }).__KAIROS_API_URL__ ?? '/api'
+    : '/api';
 
   getSummary(): Observable<Summary> {
     return this.get<Summary>('/summary');
